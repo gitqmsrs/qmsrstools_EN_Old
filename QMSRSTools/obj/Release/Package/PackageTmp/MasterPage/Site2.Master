@@ -1,0 +1,59 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site2.master.cs" Inherits="QMSRSTools.MasterPage.Site2" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <link href="~/CSS/EN-Master.css" type="text/css" rel="stylesheet" />
+    <link href="~/CSS/EN-Modules.css" type="text/css" rel="stylesheet" />
+    <link href="~/CSS/EN-Controls.css" type="text/css" rel="stylesheet" />
+    <link href="~/CSS/jquery-ui-css.css" type="text/css" rel="stylesheet"  />
+    <link href="~/CSS/jqtree.css" type="text/css" rel="stylesheet" />
+    <link href="~/CSS/uploadify.css" type="text/css" rel="Stylesheet" />
+    <link href="~/CSS/codaslider.css" type="text/css" rel="Stylesheet" />
+    <link href="~/CSS/fullcalendar.css" rel='stylesheet' />
+    <link href="~/CSS/fullcalendar.print.css" rel='stylesheet' media='print' />
+    <link href="~/CSS/timePicker.css" type="text/css" rel="Stylesheet" />
+    <link href="~/CSS/jquery.toastmessage.css" type="text/css" rel="Stylesheet" />
+
+    <script type="text/javascript" src="http://www.qmsrs.com/qmsrstools/JS/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="http://www.qmsrs.com/qmsrstools/JS/jquery-ui.js"></script>
+    <script type="text/javascript" src="http://www.qmsrs.com/qmsrstools/JS/jquery.iframe-transport.js"></script>
+    <script type="text/javascript" src="http://www.qmsrs.com/qmsrstools/JS/jquery.fileupload.js"></script>
+  
+    <script type="text/javascript" src="http://www.qmsrs.com/qmsrstools/JS/jquery.scrollTo-1.3.3.js"></script>
+    <script type="text/javascript" src="http://www.qmsrs.com/qmsrstools/JS/jquery.localscroll-1.2.5.js"></script>
+    <script type="text/javascript" src="http://www.qmsrs.com/qmsrstools/JS/jquery.serialScroll-1.2.1.js"></script>
+    <script type="text/javascript" src="http://www.qmsrs.com/qmsrstools/JS/general.js"></script>
+    <script type="text/javascript" src="http://www.qmsrs.com/qmsrstools/JS/jscell.js"></script>
+    <script type="text/javascript" src="http://www.qmsrs.com/qmsrstools/JS/jstable.js"></script>
+    <script type="text/javascript" src="http://www.qmsrs.com/qmsrstools/JS/jsmatrix.js"></script>
+    <script type="text/javascript" src="http://www.qmsrs.com/qmsrstools/JS/jsmatrixcell.js"></script>
+    <script type="text/javascript" src="http://www.qmsrs.com/qmsrstools/JS/tree.jquery.js"></script>
+    <script type="text/javascript" src="http://www.qmsrs.com/qmsrstools/JS/date.js"></script>
+    <script type="text/javascript" src="http://www.qmsrs.com/qmsrstools/JS/validation.js"></script>
+    <script type="text/javascript" src="http://www.qmsrs.com/qmsrstools/JS/jquery-ui.custom.min.js" ></script>
+    <script type="text/javascript" src="http://www.qmsrs.com/qmsrstools/JS/fullcalendar.js"></script>
+    <script type="text/javascript" src="http://www.qmsrs.com/qmsrstools/JS/textlimit.js"></script>
+    <script type="text/javascript" src="http://www.qmsrs.com/qmsrstools/JS/jquery.timePicker.js"></script>
+    <script type="text/javascript" src="http://www.qmsrs.com/qmsrstools/JS/passwordstrength.js"></script>
+    <script type="text/javascript" src="http://www.qmsrs.com/qmsrstools/JS/jquery.toastmessage.js"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <ajax:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server"></ajax:ToolkitScriptManager>   
+    
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

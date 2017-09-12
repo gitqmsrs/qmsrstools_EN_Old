@@ -1,0 +1,22 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Enviroments_Welfare.aspx.cs" Inherits="QMSRSTools.VisioLinks.Enviroments_Welfare" %>
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1" runat="server">
+    <title>Untitled Page</title>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <P class=MsoNormal style="TEXT-JUSTIFY: kashida; MARGIN: 0in 0in 0pt 49.5pt; DIRECTION: ltr; LINE-HEIGHT: 150%; unicode-bidi: embed; TEXT-ALIGN: justify; TEXT-KASHIDA: 0%; mso-pagination: none; tab-stops: right 0in 9.0pt .25in"><B><SPAN style="FONT-SIZE: 12pt; COLOR: black; LINE-HEIGHT: 150%; FONT-FAMILY: 'Book Antiqua','serif'; mso-bidi-font-family: 'Times New Roman'">Environment Welfare<?xml:namespace prefix = o ns = "urn:schemas-microsoft-com:office:office" /><o:p></o:p></SPAN></B></P>
+            <P class=MsoNormal style="TEXT-JUSTIFY: kashida; MARGIN: 0in 0in 0pt 1in; DIRECTION: ltr; LINE-HEIGHT: 150%; unicode-bidi: embed; TEXT-ALIGN: justify; TEXT-KASHIDA: 0%; mso-pagination: none; tab-stops: right 0in list 42.55pt"><SPAN style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%; FONT-FAMILY: 'Book Antiqua','serif'; mso-bidi-font-family: Garamond"><SPAN style="mso-spacerun: yes">&nbsp;</SPAN><B>QMSrs</B>’s top management is fully aware how the working environment affects the overall performance of the company. One major approach conducted by <B>QMSrs’s</B> management is opening the communication channels with all the employees and at all levels and continually work on:<o:p></o:p></SPAN></P>
+            <P class=MsoNormal style="TEXT-JUSTIFY: kashida; MARGIN: 0in 0in 0pt 130.4pt; DIRECTION: ltr; TEXT-INDENT: -17pt; LINE-HEIGHT: 150%; unicode-bidi: embed; TEXT-ALIGN: justify; TEXT-KASHIDA: 0%; mso-pagination: none; tab-stops: right 0in list 92.15pt 131.4pt; mso-list: l0 level1 lfo1"><SPAN style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%; FONT-FAMILY: Symbol; mso-bidi-font-family: Symbol; mso-fareast-font-family: Symbol"><SPAN style="mso-list: Ignore">·<SPAN style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN></SPAN></SPAN><SPAN dir=ltr></SPAN><SPAN style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%; FONT-FAMILY: 'Book Antiqua','serif'; mso-bidi-font-family: Garamond">Providing new and creative work methods and opportunities for greater involvement of employees so as to realize the potential of people in the company.<o:p></o:p></SPAN></P>
+            <P class=MsoNormal style="TEXT-JUSTIFY: kashida; MARGIN: 0in 0in 0pt 130.4pt; DIRECTION: ltr; TEXT-INDENT: -17pt; LINE-HEIGHT: 150%; unicode-bidi: embed; TEXT-ALIGN: justify; TEXT-KASHIDA: 0%; mso-pagination: none; tab-stops: right 0in list 92.15pt 131.4pt; mso-list: l0 level1 lfo1"><SPAN style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%; FONT-FAMILY: Symbol; mso-bidi-font-family: Symbol; mso-fareast-font-family: Symbol"><SPAN style="mso-list: Ignore">·<SPAN style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN></SPAN></SPAN><SPAN dir=ltr></SPAN><SPAN style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%; FONT-FAMILY: 'Book Antiqua','serif'; mso-bidi-font-family: Garamond">Providing suitable facilities in the company<o:p></o:p></SPAN></P>
+            <P class=MsoNormal style="TEXT-JUSTIFY: kashida; MARGIN: 0in 0in 0pt 130.4pt; DIRECTION: ltr; TEXT-INDENT: -17pt; LINE-HEIGHT: 150%; unicode-bidi: embed; TEXT-ALIGN: justify; TEXT-KASHIDA: 0%; mso-pagination: none; tab-stops: right 0in list 92.15pt 131.4pt; mso-list: l0 level1 lfo1"><SPAN style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%; FONT-FAMILY: Symbol; mso-bidi-font-family: Symbol; mso-fareast-font-family: Symbol"><SPAN style="mso-list: Ignore">·<SPAN style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN></SPAN></SPAN><SPAN dir=ltr></SPAN><SPAN style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%; FONT-FAMILY: 'Book Antiqua','serif'; mso-bidi-font-family: Garamond">Concentrating on hygiene and cleanliness<o:p></o:p></SPAN></P><SPAN style="FONT-SIZE: 12pt; FONT-FAMILY: 'Book Antiqua','serif'; mso-bidi-font-family: Garamond; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA">Motivating employees through performance appraisal, incentives, and real involvement of employees.</SPAN>
+        </div>
+    </form>
+</body>
+</html>
+

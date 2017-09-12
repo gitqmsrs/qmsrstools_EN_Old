@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<graph>
+  <general_settings bg_color="FFFFFF" />
+  <header text="Rag Analysis of Problem Actions" font="Verdana" color="000000" size="18" />
+  <subheader text="" font="Verdana" color="000000" size="15" />
+  <legend font="Verdana" font_size="10" bgcolor="FFFFFF" alternate_bg_color="FFF9E1" border_color="BFBFBF" />
+  <legend_popup font="Verdana" bgcolor="FFFFE3" font_size="10" />
+  <pie_chart radius="120" height="35" angle_slope="45" alpha_sides="60" alpha_lines="20" />
+  <data name="Red" value="0.00" color="ff0000" />
+  <data name="Amber" value="0.00" color="ffcc00" />
+  <data name="Green" value="100.00" color="33cc00" />
+</graph>

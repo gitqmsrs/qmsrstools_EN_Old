@@ -1,0 +1,93 @@
+﻿/*Reference http://jqueryfordesigners.com/demo/coda-slider.html */
+
+h2 
+{
+    margin: 0;
+    margin-bottom: 14px;
+    padding: 0;
+}
+
+#slider 
+{
+    width: 95%;
+    margin-left:2%;
+    float:left;
+    position: relative;
+    margin-top:15px;
+}
+
+.scroll 
+{
+    height: 560px;
+    width: 98%;
+    overflow: auto;
+    overflow-x: hidden;
+    position: relative;
+    clear: left;
+    background: #FFFFFF;
+    box-shadow:5px 0px 10px -3px #052556;
+}
+
+.scrollContainer div.panel 
+{
+    padding: 20px;
+    height: 520px;
+    width: 94%;
+    overflow:auto;
+}
+ul.navigation 
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 9px;
+}
+
+ul.navigation li 
+{
+    display: inline;
+    margin-right:3px;
+}
+ul.navigation a 
+{
+   padding: 10px;
+   color: #000;
+   text-decoration: none;
+    -webkit-border-radius: .5em .5em 0 0;
+    -moz-border-radius: .5em .5em 0 0;
+    border-radius: .5em .5em 0 0;
+    background: #BDC7D5;
+   
+}
+ul.navigation a:hover 
+{
+    color:#e3e523;  
+}
+ul.navigation a.selected 
+{
+    background-color: #052556;
+    color:#ffffff;
+}
+ul.navigation a:focus 
+{
+    outline: none;
+}
+
+.scrollButtons {
+    position: absolute;
+    top: 280px;
+    cursor: pointer;
+}
+
+.scrollButtons.left 
+{
+    left: -20px;
+}
+
+.scrollButtons.right {
+    right: -20px;
+}
+
+.hide {
+    display: none;
+}

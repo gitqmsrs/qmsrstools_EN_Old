@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/Administration/ManageDocumentFileType.aspx" hash="30f0ab540" filehash="aa7390af0305636e" flags="110000" assembly="App_Web_dvrl6evg" type="ASP.administration_managedocumentfiletype_aspx">
+    <filedeps>
+        <filedep name="/Administration/ManageDocumentFileType.aspx" />
+        <filedep name="/MasterPage/Site2.Master" />
+    </filedeps>
+</preserve>

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="2" virtualPath="/FormulaHandler.ashx" hash="4194e3c9" filehash="fffffd0565dbbdb0" flags="130000" assembly="QMSRSTools" type="QMSRSTools.FormulaHandler">
+    <filedeps>
+        <filedep name="/FormulaHandler.ashx" />
+    </filedeps>
+</preserve>

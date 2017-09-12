@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/Administration/ManageSMTP.aspx" hash="30f0ab540" filehash="6e4319a5a01c23ee" flags="110000" assembly="App_Web_dvrl6evg" type="ASP.administration_managesmtp_aspx">
+    <filedeps>
+        <filedep name="/Administration/ManageSMTP.aspx" />
+        <filedep name="/MasterPage/Site2.Master" />
+    </filedeps>
+</preserve>

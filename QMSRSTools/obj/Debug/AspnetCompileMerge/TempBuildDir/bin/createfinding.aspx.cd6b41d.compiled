@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/AuditManagement/CreateFinding.aspx" hash="fffffff7fc7587dc" filehash="4b31596c5e9046c6" flags="110000" assembly="App_Web_5p1h4pxe" type="ASP.auditmanagement_createfinding_aspx">
+    <filedeps>
+        <filedep name="/AuditManagement/CreateFinding.aspx" />
+        <filedep name="/MasterPage/Site2.Master" />
+    </filedeps>
+</preserve>

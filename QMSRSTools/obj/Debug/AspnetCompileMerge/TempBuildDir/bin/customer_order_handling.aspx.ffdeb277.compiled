@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/VisioLinks/Customer_Order_Handling.aspx" hash="fffffff7fc7587dc" filehash="2b9d487dff02" flags="110000" assembly="App_Web_1mr32qrs" type="ASP.visiolinks_customer_order_handling_aspx">
+    <filedeps>
+        <filedep name="/VisioLinks/Customer_Order_Handling.aspx" />
+    </filedeps>
+</preserve>

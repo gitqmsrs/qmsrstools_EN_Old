@@ -1,0 +1,70 @@
+D:\Desktop Files & Folders\New folder\QMSRSTools\QMSRSTools\DataClasses\bin\Debug\DataClasses.dll
+D:\Desktop Files & Folders\New folder\QMSRSTools\QMSRSTools\DataClasses\bin\Debug\DataClasses.pdb
+D:\Desktop Files & Folders\New folder\QMSRSTools\QMSRSTools\DataClasses\bin\Debug\LINQConnection.dll
+D:\Desktop Files & Folders\New folder\QMSRSTools\QMSRSTools\DataClasses\bin\Debug\LINQConnection.pdb
+D:\Desktop Files & Folders\New folder\QMSRSTools\QMSRSTools\DataClasses\obj\Debug\DataClasses.csprojResolveAssemblyReference.cache
+D:\Desktop Files & Folders\New folder\QMSRSTools\QMSRSTools\DataClasses\obj\Debug\DataClasses.dll
+D:\Desktop Files & Folders\New folder\QMSRSTools\QMSRSTools\DataClasses\obj\Debug\DataClasses.pdb
+C:\Users\IHAB\Desktop\QMSRSTools\QMSRSTools\DataClasses\bin\Debug\DataClasses.dll
+C:\Users\IHAB\Desktop\QMSRSTools\QMSRSTools\DataClasses\bin\Debug\DataClasses.pdb
+C:\Users\IHAB\Desktop\QMSRSTools\QMSRSTools\DataClasses\bin\Debug\LINQConnection.dll
+C:\Users\IHAB\Desktop\QMSRSTools\QMSRSTools\DataClasses\bin\Debug\LINQConnection.pdb
+C:\Users\IHAB\Desktop\QMSRSTools\QMSRSTools\DataClasses\obj\Debug\DataClasses.csprojResolveAssemblyReference.cache
+C:\Users\IHAB\Desktop\QMSRSTools\QMSRSTools\DataClasses\obj\Debug\DataClasses.dll
+C:\Users\IHAB\Desktop\QMSRSTools\QMSRSTools\DataClasses\obj\Debug\DataClasses.pdb
+D:\Desktop Files & Folders\QMSRSTools\DataClasses\bin\Debug\DataClasses.dll
+D:\Desktop Files & Folders\QMSRSTools\DataClasses\bin\Debug\DataClasses.pdb
+D:\Desktop Files & Folders\QMSRSTools\DataClasses\bin\Debug\LINQConnection.dll
+D:\Desktop Files & Folders\QMSRSTools\DataClasses\bin\Debug\LINQConnection.pdb
+D:\Desktop Files & Folders\QMSRSTools\DataClasses\obj\Debug\DataClasses.csprojResolveAssemblyReference.cache
+D:\Desktop Files & Folders\QMSRSTools\DataClasses\obj\Debug\DataClasses.dll
+D:\Desktop Files & Folders\QMSRSTools\DataClasses\obj\Debug\DataClasses.pdb
+C:\Users\IHAB\Desktop\QMSRSTools\DataClasses\bin\Debug\DataClasses.dll
+C:\Users\IHAB\Desktop\QMSRSTools\DataClasses\bin\Debug\DataClasses.pdb
+C:\Users\IHAB\Desktop\QMSRSTools\DataClasses\bin\Debug\LINQConnection.dll
+C:\Users\IHAB\Desktop\QMSRSTools\DataClasses\bin\Debug\LINQConnection.pdb
+C:\Users\IHAB\Desktop\QMSRSTools\DataClasses\obj\Debug\DataClasses.csprojResolveAssemblyReference.cache
+C:\Users\IHAB\Desktop\QMSRSTools\DataClasses\obj\Debug\DataClasses.dll
+C:\Users\IHAB\Desktop\QMSRSTools\DataClasses\obj\Debug\DataClasses.pdb
+D:\QMSRSTools\DataClasses\bin\Debug\DataClasses.dll
+D:\QMSRSTools\DataClasses\bin\Debug\DataClasses.pdb
+D:\QMSRSTools\DataClasses\bin\Debug\LINQConnection.dll
+D:\QMSRSTools\DataClasses\bin\Debug\LINQConnection.pdb
+D:\QMSRSTools\DataClasses\obj\Debug\DataClasses.csprojResolveAssemblyReference.cache
+D:\QMSRSTools\DataClasses\obj\Debug\DataClasses.dll
+D:\QMSRSTools\DataClasses\obj\Debug\DataClasses.pdb
+D:\Github\qmsrstools\DataClasses\bin\Debug\DataClasses.dll
+D:\Github\qmsrstools\DataClasses\bin\Debug\DataClasses.pdb
+D:\Github\qmsrstools\DataClasses\bin\Debug\LINQConnection.dll
+D:\Github\qmsrstools\DataClasses\bin\Debug\LINQConnection.pdb
+D:\Github\qmsrstools\DataClasses\obj\Debug\DataClasses.csprojResolveAssemblyReference.cache
+D:\Github\qmsrstools\DataClasses\obj\Debug\DataClasses.dll
+D:\Github\qmsrstools\DataClasses\obj\Debug\DataClasses.pdb
+D:\emeraldjecko\QMSRS\GitHub CODES\MASTER1_8\DataClasses\bin\Debug\DataClasses.dll
+D:\emeraldjecko\QMSRS\GitHub CODES\MASTER1_8\DataClasses\bin\Debug\DataClasses.pdb
+D:\emeraldjecko\QMSRS\GitHub CODES\MASTER1_8\DataClasses\bin\Debug\LINQConnection.dll
+D:\emeraldjecko\QMSRS\GitHub CODES\MASTER1_8\DataClasses\bin\Debug\LINQConnection.pdb
+D:\emeraldjecko\QMSRS\GitHub CODES\MASTER1_8\DataClasses\obj\Debug\DataClasses.csprojResolveAssemblyReference.cache
+D:\emeraldjecko\QMSRS\GitHub CODES\MASTER1_8\DataClasses\obj\Debug\DataClasses.dll
+D:\emeraldjecko\QMSRS\GitHub CODES\MASTER1_8\DataClasses\obj\Debug\DataClasses.pdb
+D:\MyDocumentsVista\JPConnectSolutions\QMSrs\CODES\GitCode\QMSrsToolEN\Branch4\DataClasses\bin\Debug\DataClasses.dll
+D:\MyDocumentsVista\JPConnectSolutions\QMSrs\CODES\GitCode\QMSrsToolEN\Branch4\DataClasses\bin\Debug\DataClasses.pdb
+D:\MyDocumentsVista\JPConnectSolutions\QMSrs\CODES\GitCode\QMSrsToolEN\Branch4\DataClasses\bin\Debug\LINQConnection.dll
+D:\MyDocumentsVista\JPConnectSolutions\QMSrs\CODES\GitCode\QMSrsToolEN\Branch4\DataClasses\bin\Debug\LINQConnection.pdb
+D:\MyDocumentsVista\JPConnectSolutions\QMSrs\CODES\GitCode\QMSrsToolEN\Branch4\DataClasses\obj\Debug\DataClasses.csprojResolveAssemblyReference.cache
+D:\MyDocumentsVista\JPConnectSolutions\QMSrs\CODES\GitCode\QMSrsToolEN\Branch4\DataClasses\obj\Debug\DataClasses.dll
+D:\MyDocumentsVista\JPConnectSolutions\QMSrs\CODES\GitCode\QMSrsToolEN\Branch4\DataClasses\obj\Debug\DataClasses.pdb
+D:\MyDocumentsVista\JPConnectSolutions\QMSrs\CODES\GitCode\QMSrsToolEN\Branch5\DataClasses\bin\Debug\DataClasses.dll
+D:\MyDocumentsVista\JPConnectSolutions\QMSrs\CODES\GitCode\QMSrsToolEN\Branch5\DataClasses\bin\Debug\DataClasses.pdb
+D:\MyDocumentsVista\JPConnectSolutions\QMSrs\CODES\GitCode\QMSrsToolEN\Branch5\DataClasses\bin\Debug\LINQConnection.dll
+D:\MyDocumentsVista\JPConnectSolutions\QMSrs\CODES\GitCode\QMSrsToolEN\Branch5\DataClasses\bin\Debug\LINQConnection.pdb
+D:\MyDocumentsVista\JPConnectSolutions\QMSrs\CODES\GitCode\QMSrsToolEN\Branch5\DataClasses\obj\Debug\DataClasses.csprojResolveAssemblyReference.cache
+D:\MyDocumentsVista\JPConnectSolutions\QMSrs\CODES\GitCode\QMSrsToolEN\Branch5\DataClasses\obj\Debug\DataClasses.dll
+D:\MyDocumentsVista\JPConnectSolutions\QMSrs\CODES\GitCode\QMSrsToolEN\Branch5\DataClasses\obj\Debug\DataClasses.pdb
+D:\MyDocumentsVista\JPConnectSolutions\QMSrs\CODES\GitCode\QMSrsToolEN\Branch7\DataClasses\bin\Debug\DataClasses.dll
+D:\MyDocumentsVista\JPConnectSolutions\QMSrs\CODES\GitCode\QMSrsToolEN\Branch7\DataClasses\bin\Debug\DataClasses.pdb
+D:\MyDocumentsVista\JPConnectSolutions\QMSrs\CODES\GitCode\QMSrsToolEN\Branch7\DataClasses\bin\Debug\LINQConnection.dll
+D:\MyDocumentsVista\JPConnectSolutions\QMSrs\CODES\GitCode\QMSrsToolEN\Branch7\DataClasses\bin\Debug\LINQConnection.pdb
+D:\MyDocumentsVista\JPConnectSolutions\QMSrs\CODES\GitCode\QMSrsToolEN\Branch7\DataClasses\obj\Debug\DataClasses.csprojResolveAssemblyReference.cache
+D:\MyDocumentsVista\JPConnectSolutions\QMSrs\CODES\GitCode\QMSrsToolEN\Branch7\DataClasses\obj\Debug\DataClasses.dll
+D:\MyDocumentsVista\JPConnectSolutions\QMSrs\CODES\GitCode\QMSrsToolEN\Branch7\DataClasses\obj\Debug\DataClasses.pdb

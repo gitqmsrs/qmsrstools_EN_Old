@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/ProblemManagement/ManageProblemActions.aspx" hash="fffffff7fc7587dc" filehash="f368028b5e61820d" flags="110000" assembly="App_Web_4ctrazck" type="ASP.problemmanagement_manageproblemactions_aspx">
+    <filedeps>
+        <filedep name="/MasterPage/Site2.Master" />
+        <filedep name="/ProblemManagement/ManageProblemActions.aspx" />
+    </filedeps>
+</preserve>

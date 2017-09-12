@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/ChangeControl/CCNStatusMetrics.aspx" hash="30f0ab540" filehash="e33d3709acf8b96a" flags="110000" assembly="App_Web_jtcfy5d6" type="ASP.changecontrol_ccnstatusmetrics_aspx">
+    <filedeps>
+        <filedep name="/ChangeControl/CCNStatusMetrics.aspx" />
+        <filedep name="/MasterPage/Site2.Master" />
+    </filedeps>
+</preserve>

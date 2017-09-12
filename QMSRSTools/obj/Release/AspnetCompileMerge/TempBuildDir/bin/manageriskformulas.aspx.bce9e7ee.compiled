@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/RiskManagement/ManageRiskFormulas.aspx" hash="30f0ab540" filehash="fa3a0eb62a336859" flags="110000" assembly="App_Web_rl23ru-f" type="ASP.riskmanagement_manageriskformulas_aspx">
+    <filedeps>
+        <filedep name="/MasterPage/Site2.Master" />
+        <filedep name="/RiskManagement/ManageRiskFormulas.aspx" />
+    </filedeps>
+</preserve>

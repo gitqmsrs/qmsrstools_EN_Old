@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/EmployeeTraining/AttendanceList.aspx" hash="30f0ab540" filehash="15a1f7e9190b874b" flags="110000" assembly="App_Web_yxol5l2q" type="ASP.employeetraining_attendancelist_aspx">
+    <filedeps>
+        <filedep name="/EmployeeTraining/AttendanceList.aspx" />
+        <filedep name="/MasterPage/Site2.Master" />
+    </filedeps>
+</preserve>

@@ -1,0 +1,60 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site2.master.cs" Inherits="QMSRSTools.MasterPage.Site2" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <link href="<%=GetSitePath() + "/CSS/EN-Master.css" %>" type="text/css" rel="stylesheet" />
+    <link href="<%=GetSitePath() + "/CSS/EN-Modules.css" %>" type="text/css" rel="stylesheet" />
+    <link href="<%=GetSitePath() + "/CSS/EN-Controls.css" %>" type="text/css" rel="stylesheet" />
+    <link href="<%=GetSitePath() + "/CSS/jquery-ui-css.css" %>" type="text/css" rel="stylesheet"  />
+    <link href="<%=GetSitePath() + "/CSS/jqtree.css" %>" type="text/css" rel="stylesheet" />
+    <link href="<%=GetSitePath() + "/CSS/uploadify.css" %>" type="text/css" rel="Stylesheet" />
+    <link href="<%=GetSitePath() + "/CSS/codaslider.css" %>" type="text/css" rel="Stylesheet" />
+    <link href="<%=GetSitePath() + "/CSS/fullcalendar.css" %>" rel='stylesheet' />
+    <link href="<%=GetSitePath() + "/CSS/fullcalendar.print.css" %>" rel='stylesheet' media='print' />
+    <link href="<%=GetSitePath() + "/CSS/timePicker.css" %>" type="text/css" rel="Stylesheet" />
+    <link href="<%=GetSitePath() + "/CSS/jquery.toastmessage.css" %>" type="text/css" rel="Stylesheet" />
+
+    <script type="text/javascript" src="<%=GetSitePath() + "/JS/jquery-1.9.1.js" %>"></script>
+    <script type="text/javascript" src="<%=GetSitePath() + "/JS/jquery-ui.js" %>"></script>
+    <script type="text/javascript" src="<%=GetSitePath() + "/JS/jquery.iframe-transport.js" %>"></script>
+    <script type="text/javascript" src="<%=GetSitePath() + "/JS/jquery.fileupload.js" %>"></script>
+  
+    <script type="text/javascript" src="<%=GetSitePath() + "/JS/jquery.scrollTo-1.3.3.js" %>"></script>
+    <script type="text/javascript" src="<%=GetSitePath() + "/JS/jquery.localscroll-1.2.5.js" %>"></script>
+    <script type="text/javascript" src="<%=GetSitePath() + "/JS/jquery.serialScroll-1.2.1.js" %>"></script>
+    <script type="text/javascript" src="<%=GetSitePath() + "/JS/general.js" %>"></script>
+    <script type="text/javascript" src="<%=GetSitePath() + "/JS/jscell.js" %>"></script>
+    <script type="text/javascript" src="<%=GetSitePath() + "/JS/jstable.js" %>"></script>
+    <script type="text/javascript" src="<%=GetSitePath() + "/JS/jsmatrix.js" %>"></script>
+    <script type="text/javascript" src="<%=GetSitePath() + "/JS/jsmatrixcell.js" %>"></script>
+    <script type="text/javascript" src="<%=GetSitePath() + "/JS/tree.jquery.js" %>"></script>
+    <script type="text/javascript" src="<%=GetSitePath() + "/JS/date.js" %>"></script>
+    <script type="text/javascript" src="<%=GetSitePath() + "/JS/validation.js" %>"></script>
+    <script type="text/javascript" src="<%=GetSitePath() + "/JS/jquery-ui.custom.min.js" %>" ></script>
+    <script type="text/javascript" src="<%=GetSitePath() + "/JS/fullcalendar.js" %>"></script>
+    <script type="text/javascript" src="<%=GetSitePath() + "/JS/textlimit.js" %>"></script>
+    <script type="text/javascript" src="<%=GetSitePath() + "/JS/jquery.timePicker.js" %>"></script>
+    <script type="text/javascript" src="<%=GetSitePath() + "/JS/passwordstrength.js" %>"></script>
+    <script type="text/javascript" src="<%=GetSitePath() + "/JS/jquery.toastmessage.js" %>"></script>
+    <script type="text/javascript" src="<%=GetSitePath() + "/JS/moment.js" %>"></script>
+    <script type="text/javascript" src="<%=GetSitePath() + "/JS/moment-with-locales.js" %>"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <ajax:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server"></ajax:ToolkitScriptManager>   
+    
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

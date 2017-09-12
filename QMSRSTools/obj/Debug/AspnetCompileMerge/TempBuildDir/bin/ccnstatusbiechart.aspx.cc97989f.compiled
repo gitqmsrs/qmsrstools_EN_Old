@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/ChangeControl/CCNStatusBieChart.aspx" hash="fffffff7fc7587dc" filehash="9147edbee768d693" flags="110000" assembly="App_Web_aoekqx5l" type="ASP.changecontrol_ccnstatusbiechart_aspx">
+    <filedeps>
+        <filedep name="/ChangeControl/CCNStatusBieChart.aspx" />
+        <filedep name="/MasterPage/Site2.Master" />
+    </filedeps>
+</preserve>

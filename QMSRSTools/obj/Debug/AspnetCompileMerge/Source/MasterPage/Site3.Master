@@ -1,0 +1,49 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site3.master.cs" Inherits="QMSRSTools.MasterPage.Site3" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <link href="~/CSS/EN-Controls.css" type="text/css" rel="stylesheet" />
+    <link href="~/CSS/login.css" type="text/css" rel="stylesheet" />
+
+    <script type="text/javascript" src="http://www.qmsrs.com/qmsrstools/JS/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="http://www.qmsrs.com/qmsrstools/JS/general.js"></script>
+
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body onload="checkLicenseValidation();">
+    <form id="form1" runat="server">
+    <ajax:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server"></ajax:ToolkitScriptManager>
+    
+        <div class="headertop">
+        <table id="Table_01" width="800" height="78" border="0" cellpadding="0" cellspacing="0" style="margin-top:2px;">
+	        <tr>
+		    <td>
+			    <img src="http://www.qmsrs.com/qmsrstools/Images/Login_Logo_01.png" width="54" height="78" alt="" /></td>
+		    <td>
+			    <img src="http://www.qmsrs.com/qmsrstools/Images/Login_Logo_02.png" width="103" height="78" alt="" /></td>
+		    <td>
+			    <img src="http://www.qmsrs.com/qmsrstools/Images/Login_Logo_03.png" width="282" height="78" alt="" /></td>
+		    <td>
+			    <img src="http://www.qmsrs.com/qmsrstools/Images/Login_Logo_04.png" width="120" height="78" alt="" /></td>
+		    <td>
+			    <img src="http://www.qmsrs.com/qmsrstools/Images/Login_Logo_05.png" width="67" height="78" alt="" /></td>
+		    <td>
+			    <img src="http://www.qmsrs.com/qmsrstools/Images/Login_Logo_06.png" width="173" height="78" alt="" /></td>
+		    <td>
+			    <img src="http://www.qmsrs.com/qmsrstools/Images/Login_Logo_07.png" width="1" height="78" alt="" /></td>
+	        </tr>
+        </table>
+    </div>   
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+    </asp:ContentPlaceHolder>
+      <div class="footer">© QMSrs, 2008-2014, registered in England, United Kingdom, No. 03836478.</div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/AssetManagement/CalibrationStatusStatistics.aspx" hash="fffffff7fc7587dc" filehash="a6329c11c0cba0c1" flags="110000" assembly="App_Web_htnpspus" type="ASP.assetmanagement_calibrationstatusstatistics_aspx">
+    <filedeps>
+        <filedep name="/AssetManagement/CalibrationStatusStatistics.aspx" />
+        <filedep name="/MasterPage/Site2.Master" />
+    </filedeps>
+</preserve>

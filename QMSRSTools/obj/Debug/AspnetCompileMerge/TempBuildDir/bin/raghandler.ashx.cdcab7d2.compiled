@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="2" virtualPath="/RAGHandler.ashx" hash="4194e3c9" filehash="ffffd2a82223c6f8" flags="130000" assembly="QMSRSTools" type="QMSRSTools.RAGHandler">
+    <filedeps>
+        <filedep name="/RAGHandler.ashx" />
+    </filedeps>
+</preserve>

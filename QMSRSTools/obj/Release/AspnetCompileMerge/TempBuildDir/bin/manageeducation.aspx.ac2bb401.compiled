@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/EmployeeManagement/ManageEducation.aspx" hash="30f0ab540" filehash="e43367e597e46ee9" flags="110000" assembly="App_Web_faefpxcl" type="ASP.employeemanagement_manageeducation_aspx">
+    <filedeps>
+        <filedep name="/EmployeeManagement/ManageEducation.aspx" />
+        <filedep name="/MasterPage/Site2.Master" />
+    </filedeps>
+</preserve>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<graph>
+  <general_settings bg_color="FFFFFF" />
+  <header text="Average of Opened, Closed, or Cancelled" font="Verdana" color="000000" size="18" />
+  <subheader text="Document Change Requests" font="Verdana" color="000000" size="15" />
+  <legend font="Verdana" font_size="10" bgcolor="FFFFFF" alternate_bg_color="FFF9E1" border_color="BFBFBF" />
+  <legend_popup font="Verdana" bgcolor="FFFFE3" font_size="10" />
+  <pie_chart radius="120" height="35" angle_slope="45" alpha_sides="60" alpha_lines="20" />
+  <data name="Open" value="0.00" color="175BE3" />
+  <data name="Closed" value="33.33" color="FFB31A" />
+  <data name="Cancelled" value="66.67" color="3C3C3C" />
+</graph>

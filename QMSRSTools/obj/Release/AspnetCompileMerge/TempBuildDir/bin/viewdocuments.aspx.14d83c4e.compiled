@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/DocumentList/ViewDocuments.aspx" hash="30f0ab540" filehash="da62ec6b109c0cf3" flags="110000" assembly="App_Web_9p9aq4vf" type="ASP.documentlist_viewdocuments_aspx">
+    <filedeps>
+        <filedep name="/DocumentList/ViewDocuments.aspx" />
+        <filedep name="/MasterPage/Site2.Master" />
+    </filedeps>
+</preserve>

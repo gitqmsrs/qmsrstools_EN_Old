@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="2" virtualPath="/Upload.ashx" hash="1ac71260" filehash="ffffe70375d4dfcd" flags="130000" assembly="QMSRSTools" type="QMSRSTools.Upload">
+    <filedeps>
+        <filedep name="/Upload.ashx" />
+    </filedeps>
+</preserve>

@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/ManagementReviews/ReviewCategory.aspx" hash="30f0ab540" filehash="df6c3d03692af9d4" flags="110000" assembly="App_Web_lrkikyld" type="ASP.managementreviews_reviewcategory_aspx">
+    <filedeps>
+        <filedep name="/ManagementReviews/ReviewCategory.aspx" />
+        <filedep name="/MasterPage/Site2.Master" />
+    </filedeps>
+</preserve>

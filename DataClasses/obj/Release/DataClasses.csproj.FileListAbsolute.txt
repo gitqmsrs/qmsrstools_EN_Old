@@ -1,0 +1,21 @@
+D:\Desktop Files & Folders\QMSRSTools\DataClasses\obj\Release\DataClasses.csprojResolveAssemblyReference.cache
+D:\Desktop Files & Folders\QMSRSTools\DataClasses\bin\Release\DataClasses.dll
+D:\Desktop Files & Folders\QMSRSTools\DataClasses\bin\Release\DataClasses.pdb
+D:\Desktop Files & Folders\QMSRSTools\DataClasses\bin\Release\LINQConnection.dll
+D:\Desktop Files & Folders\QMSRSTools\DataClasses\bin\Release\LINQConnection.pdb
+D:\Desktop Files & Folders\QMSRSTools\DataClasses\obj\Release\DataClasses.dll
+D:\Desktop Files & Folders\QMSRSTools\DataClasses\obj\Release\DataClasses.pdb
+D:\QMSRSTools\DataClasses\bin\Release\DataClasses.dll
+D:\QMSRSTools\DataClasses\bin\Release\DataClasses.pdb
+D:\QMSRSTools\DataClasses\bin\Release\LINQConnection.dll
+D:\QMSRSTools\DataClasses\bin\Release\LINQConnection.pdb
+D:\QMSRSTools\DataClasses\obj\Release\DataClasses.csprojResolveAssemblyReference.cache
+D:\QMSRSTools\DataClasses\obj\Release\DataClasses.dll
+D:\QMSRSTools\DataClasses\obj\Release\DataClasses.pdb
+D:\Github\qmsrstools\DataClasses\bin\Release\DataClasses.dll
+D:\Github\qmsrstools\DataClasses\bin\Release\DataClasses.pdb
+D:\Github\qmsrstools\DataClasses\bin\Release\LINQConnection.dll
+D:\Github\qmsrstools\DataClasses\bin\Release\LINQConnection.pdb
+D:\Github\qmsrstools\DataClasses\obj\Release\DataClasses.csprojResolveAssemblyReference.cache
+D:\Github\qmsrstools\DataClasses\obj\Release\DataClasses.dll
+D:\Github\qmsrstools\DataClasses\obj\Release\DataClasses.pdb

@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/Administration/ManageAuthorization.aspx" hash="30f0ab540" filehash="fe32889acd1d418" flags="110000" assembly="App_Web_dvrl6evg" type="ASP.administration_manageauthorization_aspx">
+    <filedeps>
+        <filedep name="/Administration/ManageAuthorization.aspx" />
+        <filedep name="/MasterPage/Site2.Master" />
+    </filedeps>
+</preserve>

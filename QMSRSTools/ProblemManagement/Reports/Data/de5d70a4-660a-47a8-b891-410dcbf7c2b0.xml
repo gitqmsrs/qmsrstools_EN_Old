@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<graph>
+  <general_settings bg_color="FFFFFF" show_background_side="0" background_side_color="D9D9D9" floor_color="CCCCCC" />
+  <header text="Statistics of Problems Grouped By Severity" font="Verdana" color="000000" size="18" />
+  <subheader text="" font="Verdana" color="000000" size="15" />
+  <legend_popup font="Verdana" bgcolor="FFFFE3" font_size="10" />
+  <Xheaders rotate="0" color="000000" size="10" title="" title_color="000000" />
+  <Yheaders color="000000" size="10" title="" title_rotate="90" title_color="000000" />
+  <grid groove="1" grid_width="700" grid_height="250" grid_color="000000" grid_alpha="40" grid_thickness="1" />
+  <bars view_value="1" width="50" thickness="5" alpha="100" pieces_grow_bar="100" />
+  <data name="High(65.30%)" value="1" color="175BE3" />
+</graph>

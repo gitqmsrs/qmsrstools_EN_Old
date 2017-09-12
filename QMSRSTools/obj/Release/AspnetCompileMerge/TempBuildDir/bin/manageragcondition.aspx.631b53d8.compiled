@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/Administration/ManageRAGCondition.aspx" hash="30f0ab540" filehash="cd157f6013660ea6" flags="110000" assembly="App_Web_dvrl6evg" type="ASP.administration_manageragcondition_aspx">
+    <filedeps>
+        <filedep name="/Administration/ManageRAGCondition.aspx" />
+        <filedep name="/MasterPage/Site2.Master" />
+    </filedeps>
+</preserve>

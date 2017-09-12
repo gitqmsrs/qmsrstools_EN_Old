@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/ManagementReviews/ManagementReviewActionList.aspx" hash="30f0ab540" filehash="8050062b20fb7781" flags="110000" assembly="App_Web_lrkikyld" type="ASP.managementreviews_managementreviewactionlist_aspx">
+    <filedeps>
+        <filedep name="/ManagementReviews/ManagementReviewActionList.aspx" />
+        <filedep name="/MasterPage/Site2.Master" />
+    </filedeps>
+</preserve>

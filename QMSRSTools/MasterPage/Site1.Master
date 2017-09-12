@@ -1,0 +1,148 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs"  Inherits="QMSRSTools.MasterPage.Site1" %>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <link href="<%=GetSitePath() + "/CSS/EN-Master.css" %>" type="text/css" rel="stylesheet" />
+    <link href="<%=GetSitePath() + "/CSS/EN-Modules.css" %>" type="text/css" rel="stylesheet" />
+    <link href="<%=GetSitePath() + "/CSS/EN-Controls.css" %>" type="text/css" rel="stylesheet" />
+    <link href="<%=GetSitePath() + "/CSS/jquery-ui-css.css" %>" type="text/css" rel="stylesheet"  />
+    <link href="<%=GetSitePath() + "/CSS/jqtree.css" %>" type="text/css" rel="stylesheet" />
+    <link href="<%=GetSitePath() + "/CSS/uploadify.css" %>"  type="text/css" rel="Stylesheet" />
+    <link href="<%=GetSitePath() + "/CSS/codaslider.css" %>" type="text/css" rel="Stylesheet" />
+    <link href="<%=GetSitePath() + "/CSS/timePicker.css" %>" type="text/css" rel="Stylesheet" />
+    <link href="<%=GetSitePath() + "/CSS/jquery.toastmessage.css" %>" type="text/css" rel="Stylesheet" />
+
+    <script type="text/javascript" src="<%=GetSitePath() + "/JS/jquery-1.9.1.js" %>"></script>
+    <script type="text/javascript" src="<%=GetSitePath() + "/JS/jquery-ui.js" %>"></script>
+    <script type="text/javascript" src="<%=GetSitePath() + "/JS/jquery.iframe-transport.js" %>"></script>
+    <script type="text/javascript" src="<%=GetSitePath() + "/JS/jquery.fileupload.js" %>"></script>
+  
+    <script type="text/javascript" src="<%=GetSitePath() + "/JS/jquery.scrollTo-1.3.3.js" %>"></script>
+    <script type="text/javascript" src="<%=GetSitePath() + "/JS/jquery.localscroll-1.2.5.js" %>"></script>
+    <script type="text/javascript" src="<%=GetSitePath() + "/JS/jquery.serialScroll-1.2.1.js" %>"></script>
+    <script type="text/javascript" src="<%=GetSitePath() + "/JS/general.js" %>"></script>
+    <script type="text/javascript" src="<%=GetSitePath() + "/JS/jscell.js" %>"></script>
+    <script type="text/javascript" src="<%=GetSitePath() + "/JS/jstable.js" %>"></script>
+    <script type="text/javascript" src="<%=GetSitePath() + "/JS/tree.jquery.js" %>"></script>
+    <script type="text/javascript" src="<%=GetSitePath() + "/JS/date.js" %>"></script>
+    <script type="text/javascript" src="<%=GetSitePath() + "/JS/validation.js" %>"></script>
+    <script type="text/javascript" src="<%=GetSitePath() + "/JS/textlimit.js" %>"></script>
+    <script type="text/javascript" src="<%=GetSitePath() + "/JS/jquery.timePicker.js" %>"></script>
+    <script type="text/javascript" src="<%=GetSitePath() + "/JS/passwordstrength.js" %>"></script>
+    <script type="text/javascript" src="<%=GetSitePath() + "/JS/fullcalendar.js" %>"></script>
+    <script type="text/javascript" src="<%=GetSitePath() + "/JS/jquery.toastmessage.js" %>"></script>
+    <script type="text/javascript" src="<%=GetSitePath() + "/JS/moment.js" %>"></script>
+    <script type="text/javascript" src="<%=GetSitePath() + "/JS/moment-with-locales.js" %>"></script>
+    <script language="javascript" type="text/javascript">
+
+        /*jquery code used for terminating sessions upon logging out or closing the main page of the tools*/
+        $(window).on('beforeunload', function (e) {
+            return "This will cause the current visiting session to terminate, continue?";
+        });
+
+        $(window).on('unload', function (e)
+        {
+            HandleOnclose();
+        });
+
+        function HandleOnclose()
+        {
+            var request = GetRequest();
+            request.open("GET", "../TerminateSession.aspx?redirect=true",false);
+            request.send();
+        }
+
+        function GetRequest()
+        {
+            var xmlHttp = null;
+            try {
+                // Firefox, Opera 8.0+, Safari
+                xmlHttp = new XMLHttpRequest();
+            }
+            catch (e) {
+                //Internet Explorer
+                try {
+                    xmlHttp = new ActiveXObject("Msxml2.XMLHTTP");
+                }
+                catch (e) {
+                    xmlHttp = new ActiveXObject("Microsoft.XMLHTTP");
+                }
+            }
+            return xmlHttp;
+        }
+
+    </script>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+        <!--[if gte IE 9]>
+            <style type="text/css">
+            .gradient {
+            filter: none;
+            }
+            </style>
+        <![endif]-->
+    </asp:ContentPlaceHolder>
+</head>
+
+<body>
+
+    <form id="form1" runat="server">       
+    <ajax:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server"></ajax:ToolkitScriptManager>   
+    <div class="topHeader">
+        
+    </div>
+
+    <div class="header">
+        <div id="logo" class="logoheader">
+  
+        <table id="logo_table" class="logotable" border="0" cellpadding="0" cellspacing="0" >
+	           
+	        <tr>
+		        <td rowspan="2">
+			        <img src="<%=GetSitePath() + "/Images/Login_Logo_01.gif" %>"  height="78" alt="" />	
+                    <%--<asp:Image ImageUrl="~/Images/Login_Logo_01.gif"  height="78" runat="server"  AlternateText=""/>--%>	       		        
+		        </td>
+		        <td rowspan="2">
+			        <div style="width:118px; height:78px;" />
+		        </td>
+	        </tr>
+	        
+        </table>
+        </div>
+
+        <asp:Button ID="signout" runat="server" CssClass="signouttext" OnClick="signout_Click" Text="Logout" />
+         
+        <div style="float:right; width:300px; height:100px; margin-top:20px;">
+            <asp:Label ID="userID" runat="server" Width="290px" CssClass="username"></asp:Label>
+            <asp:Label ID="accessTime" runat="server" Width="290px" CssClass="accesstime"></asp:Label>
+        </div>
+    </div>
+    <ul class="menubarcontainer">
+        <li><a href="javascript:viewHomeProcess();">Main</a></li>
+        <li><a href="javascript:Objectives();">Org.Objectives</a></li>
+        <li><a href="javascript:News();">News and Communications</a></li>
+        <li><a href="javascript:OrgChart();">Org.Chart</a></li>
+        <li><a href="javascript:OperationsManual();">Operations Manual</a></li>
+        <li><a href="javascript:Polices();">Quality Policy </a></li>
+        <li><a href="javascript:QualityRecords();">Quality Records</a></li>
+        <li><a href="javascript:Glossary();">Glossary</a></li>
+        <li><a href="javascript:Calendar();">Calendar</a></li>
+        <li><a href="javascript:Processes();">Internal Processes</a></li>
+    </ul>
+   
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+   
+    <div id="footer">
+        <div class="copyright">© QMSrs, 2008-2014, registered in England, United Kingdom, No. 03836478.</div>
+        <div class="links">
+            <a href="mailto:support@qmsrs.co.uk">Contact Our Support Team</a>
+            <div class="address"> Product Release QMS2014.1.0</div>
+            <div class="address">Email: support@qmsrs.co.uk</div>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

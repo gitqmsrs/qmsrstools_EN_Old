@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/AssetManagement/ManageAssetStatus.aspx" hash="30f0ab540" filehash="fa62913a12dc56a5" flags="110000" assembly="App_Web_tg0vuldv" type="ASP.assetmanagement_manageassetstatus_aspx">
+    <filedeps>
+        <filedep name="/AssetManagement/ManageAssetStatus.aspx" />
+        <filedep name="/MasterPage/Site2.Master" />
+    </filedeps>
+</preserve>

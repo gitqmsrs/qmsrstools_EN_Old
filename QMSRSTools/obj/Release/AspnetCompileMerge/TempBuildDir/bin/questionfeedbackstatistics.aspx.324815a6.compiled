@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/EmployeeTraining/QuestionFeedbackStatistics.aspx" hash="30f0ab540" filehash="cf0af15d378d5e06" flags="110000" assembly="App_Web_yxol5l2q" type="ASP.employeetraining_questionfeedbackstatistics_aspx">
+    <filedeps>
+        <filedep name="/EmployeeTraining/QuestionFeedbackStatistics.aspx" />
+        <filedep name="/MasterPage/Site2.Master" />
+    </filedeps>
+</preserve>

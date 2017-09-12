@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="2" virtualPath="/DBService.asmx" hash="1ac71260" filehash="35d485e2353b" flags="130000" assembly="QMSRSTools" type="QMSRSTools.DBService">
+    <filedeps>
+        <filedep name="/DBService.asmx" />
+    </filedeps>
+</preserve>

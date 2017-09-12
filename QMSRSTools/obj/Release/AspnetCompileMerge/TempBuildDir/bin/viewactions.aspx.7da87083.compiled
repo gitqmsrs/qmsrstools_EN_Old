@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/ProblemManagement/ViewActions.aspx" hash="30f0ab540" filehash="5c6144ef3cda32d" flags="110000" assembly="App_Web_-kspo3ox" type="ASP.problemmanagement_viewactions_aspx">
+    <filedeps>
+        <filedep name="/MasterPage/Site2.Master" />
+        <filedep name="/ProblemManagement/ViewActions.aspx" />
+    </filedeps>
+</preserve>

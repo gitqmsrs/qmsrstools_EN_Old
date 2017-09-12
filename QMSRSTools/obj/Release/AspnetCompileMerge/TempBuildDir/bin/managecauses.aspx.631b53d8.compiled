@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/Administration/ManageCauses.aspx" hash="30f0ab540" filehash="625b3e65e7e8e4aa" flags="110000" assembly="App_Web_dvrl6evg" type="ASP.administration_managecauses_aspx">
+    <filedeps>
+        <filedep name="/Administration/ManageCauses.aspx" />
+        <filedep name="/MasterPage/Site2.Master" />
+    </filedeps>
+</preserve>

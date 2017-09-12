@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/AuditManagement/EditFinding.aspx" hash="fffffff7fc7587dc" filehash="33445520f1c0e0f9" flags="110000" assembly="App_Web_d1ebzptk" type="ASP.auditmanagement_editfinding_aspx">
+    <filedeps>
+        <filedep name="/AuditManagement/EditFinding.aspx" />
+        <filedep name="/MasterPage/Site2.Master" />
+    </filedeps>
+</preserve>

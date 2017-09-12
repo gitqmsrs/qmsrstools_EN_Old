@@ -1,0 +1,4 @@
+D:\emeraldjecko\QMSRS\CODES\qmsrstools\Utilities\bin\Debug\Utilities.dll
+D:\emeraldjecko\QMSRS\CODES\qmsrstools\Utilities\bin\Debug\Utilities.pdb
+D:\emeraldjecko\QMSRS\CODES\qmsrstools\Utilities\obj\Debug\Utilities.dll
+D:\emeraldjecko\QMSRS\CODES\qmsrstools\Utilities\obj\Debug\Utilities.pdb

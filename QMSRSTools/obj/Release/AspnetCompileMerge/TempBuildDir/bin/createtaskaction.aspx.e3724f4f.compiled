@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/ManagementReviews/CreateTaskAction.aspx" hash="30f0ab540" filehash="e6a9f68116e9118" flags="110000" assembly="App_Web_lrkikyld" type="ASP.managementreviews_createtaskaction_aspx">
+    <filedeps>
+        <filedep name="/ManagementReviews/CreateTaskAction.aspx" />
+        <filedep name="/MasterPage/Site2.Master" />
+    </filedeps>
+</preserve>

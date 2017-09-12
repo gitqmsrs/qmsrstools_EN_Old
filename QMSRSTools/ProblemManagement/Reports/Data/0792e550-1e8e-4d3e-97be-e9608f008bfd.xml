@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<graph>
+  <general_settings bg_color="FFFFFF" show_background_side="0" background_side_color="D9D9D9" floor_color="CCCCCC" />
+  <header text="Statistics of Annual Problems" font="Verdana" color="000000" size="18" />
+  <subheader text="Year (2014)" font="Verdana" color="000000" size="15" />
+  <legend_popup font="Verdana" bgcolor="FFFFE3" font_size="10" />
+  <Xheaders rotate="0" color="000000" size="10" title="" title_color="000000" />
+  <Yheaders color="000000" size="10" title="" title_rotate="90" title_color="000000" />
+  <grid groove="1" grid_width="700" grid_height="250" grid_color="000000" grid_alpha="40" grid_thickness="1" />
+  <bars view_value="1" width="29" thickness="5" alpha="100" pieces_grow_bar="100" />
+  <data name="January" value="0" color="175BE3" />
+  <data name="February" value="0" color="FFB31A" />
+  <data name="March" value="0" color="3C3C3C" />
+  <data name="April" value="0" color="FFFD1A" />
+  <data name="May" value="0" color="FF1A68" />
+  <data name="June" value="0" color="74F418" />
+  <data name="July" value="0" color="FF6E1A" />
+  <data name="August" value="5" color="8215D3" />
+  <data name="September" value="7" color="9966CC" />
+  <data name="October" value="0" color="000000" />
+  <data name="November" value="0" color="0090FF" />
+  <data name="December" value="0" color="66FF00" />
+</graph>

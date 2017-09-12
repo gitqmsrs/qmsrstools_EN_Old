@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/OrganizationManagement/ManagePosition.aspx" hash="30f0ab540" filehash="fa3a17e4ae7f7200" flags="110000" assembly="App_Web_cl0c9w8s" type="ASP.organizationmanagement_manageposition_aspx">
+    <filedeps>
+        <filedep name="/MasterPage/Site2.Master" />
+        <filedep name="/OrganizationManagement/ManagePosition.aspx" />
+    </filedeps>
+</preserve>

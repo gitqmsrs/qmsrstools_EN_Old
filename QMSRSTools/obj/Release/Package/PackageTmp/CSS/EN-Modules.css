@@ -1,0 +1,130 @@
+﻿.modulecontainer 
+{
+    width:79%;
+    height:660px;
+    background-color:#f9f9f9;
+    border: 2px solid #052556;
+    margin-left:2px;
+    float:left;
+    margin-top:1px;
+ }
+
+.modulewrapper 
+{
+    width:100%;
+    height:659px;
+    background-color:#ffffff;
+    float:left;
+}
+.modal 
+{
+    position:   fixed;
+    z-index:    1000;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;
+    background:#052556
+                url('http://www.qmsrs.com/qmsrstools/Images/ajax-loader.gif') 
+                50% 50% 
+                no-repeat;
+
+    filter:alpha(opacity=80);
+    opacity:0.8;
+     
+}
+.modaltext 
+{
+    color:#052556;
+    margin-top:60%;
+    margin-left:auto;
+    margin-right:auto;
+    font-size:14px;
+	font-family:Arial, Helvetica, sans-serif; 
+    font-weight:bold;
+}
+.menucontainer 
+{
+    width:20%;
+    height:660px;
+    margin-top:1px;
+    float:left;
+    border: 2px solid #052556;
+    background-color:#f9f9f9;
+    overflow:auto;
+}
+.rootdiv 
+{
+    width:250px;
+    float:left;
+    margin-left:3px;
+    margin-top:3px;
+    cursor:pointer;
+    color:#052556;
+    font-size:12px;
+	font-family:Arial, Helvetica, sans-serif; 
+    font-weight:bold;
+}
+
+.submenu_container 
+{
+    width:200px;
+    height:auto;
+    display:none;
+    margin-left:3px;
+    margin-top:3px;
+}
+.root 
+{
+    width:220px;
+    cursor:pointer;
+    float:left;
+    padding-left:3px;
+}
+.rootimg 
+{
+    width:16px;
+    height:16px;
+    float:left;
+}
+.childcontrol, .childpage
+{
+    width:80%;
+    font-size:12px;
+	font-family:Arial, Helvetica, sans-serif; 
+    cursor:pointer;
+    padding-left:20%;
+    padding-top:6px;
+    float:left;
+    color:#5692ee;
+}
+.root:hover 
+{
+  color:#e3e523;
+}
+.childcontrol:hover, .childpage:hover 
+{
+  color:#e3e523;
+}
+
+.moduleheader
+{
+    top:0;
+	width:100%;
+	direction:ltr;
+	height:3%;
+	color:White;
+	font-size:15px;
+	text-align:center;
+    font-family:Corbel;
+    background: rgb(206,220,231); /* Old browsers */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2NlZGNlNyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwNTI1NTYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top,  rgba(206,220,231,1) 0%, rgba(5,37,86,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(206,220,231,1)), color-stop(100%,rgba(5,37,86,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(206,220,231,1) 0%,rgba(5,37,86,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(206,220,231,1) 0%,rgba(5,37,86,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(206,220,231,1) 0%,rgba(5,37,86,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(206,220,231,1) 0%,rgba(5,37,86,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cedce7', endColorstr='#052556',GradientType=0 ); /* IE6-8 */
+}

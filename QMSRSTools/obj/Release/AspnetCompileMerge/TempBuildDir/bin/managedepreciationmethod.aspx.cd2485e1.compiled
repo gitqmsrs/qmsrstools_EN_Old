@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/AssetManagement/ManageDepreciationMethod.aspx" hash="30f0ab540" filehash="ad6b572bc08c39f1" flags="110000" assembly="App_Web_vqv0y0bz" type="ASP.assetmanagement_managedepreciationmethod_aspx">
+    <filedeps>
+        <filedep name="/AssetManagement/ManageDepreciationMethod.aspx" />
+        <filedep name="/MasterPage/Site2.Master" />
+    </filedeps>
+</preserve>

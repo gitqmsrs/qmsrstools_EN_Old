@@ -1,0 +1,2087 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9DD36040-374A-49DD-AFF0-6AD0A63080B4}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QMSRSTools</RootNamespace>
+    <AssemblyName>QMSRSTools</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=3.5.7.725, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="AjaxMin, Version=4.97.4951.28478, Culture=neutral, PublicKeyToken=21ef50ce11b5d80f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\AjaxMin.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlAgilityPack, Version=1.4.6.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="LicenseDataClasses">
+      <HintPath>..\..\..\..\LicenseManagement\LicenseManagement\LicenseMGRModules\bin\LicenseDataClasses.dll</HintPath>
+    </Reference>
+    <Reference Include="LicenseLINQConnection">
+      <HintPath>..\..\..\..\LicenseManagement\LicenseManagement\LicenseMGRModules\bin\LicenseLINQConnection.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Microsoft.ReportViewer.ProcessingObjectModel.DLL</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Microsoft.ReportViewer.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AssetManagement\AssetListByCategory.aspx" />
+    <Content Include="AssetManagement\ManageAssetCategory.aspx" />
+    <Content Include="Administration\ManageAuthorization.aspx" />
+    <Content Include="Administration\ManageBillingCategory.aspx" />
+    <Content Include="Administration\ManageCauses.aspx" />
+    <Content Include="Administration\ManageCostCentre.aspx" />
+    <Content Include="Administration\ManageCustomer.aspx" />
+    <Content Include="Administration\ManageDocumentFileType.aspx" />
+    <Content Include="Administration\ManageEmailTemplate.aspx" />
+    <Content Include="Administration\ManageISO.aspx" />
+    <Content Include="Administration\ManageRAGCondition.aspx" />
+    <Content Include="AssetManagement\Reports\Data\0054ae9c-8340-4d6c-8b77-a927c5e45178.xml" />
+    <Content Include="AssetManagement\Reports\Data\0aa98fff-c969-421f-a666-31825f8936d9.xml" />
+    <Content Include="AssetManagement\Reports\Data\0b88704f-0ba8-4686-9e08-d59b05a3a53c.xml" />
+    <Content Include="AssetManagement\Reports\Data\0b97e873-9a81-4f2f-b805-28a94a89edc9.xml" />
+    <Content Include="AssetManagement\Reports\Data\0edcc957-b00e-4e52-9ec7-52dfb5ea0bee.xml" />
+    <Content Include="AssetManagement\Reports\Data\13a5dd94-449d-41dd-b3a2-eaa86fa5e3f5.xml" />
+    <Content Include="AssetManagement\Reports\Data\14de8580-856a-45f7-9928-85dfbafaef1f.xml" />
+    <Content Include="AssetManagement\Reports\Data\15b48356-7827-4009-948f-91a2f062f17e.xml" />
+    <Content Include="AssetManagement\Reports\Data\15b5c59d-638f-4b73-a4b9-cf6ba24a5149.xml" />
+    <Content Include="AssetManagement\Reports\Data\16837316-76f9-486c-b7a2-cade811e5b16.xml" />
+    <Content Include="AssetManagement\Reports\Data\193c6249-66d5-44d6-9d78-5e92932618e2.xml" />
+    <Content Include="AssetManagement\Reports\Data\1c6cf4c2-45b7-4e1c-8ad0-42dc50d3cc93.xml" />
+    <Content Include="AssetManagement\Reports\Data\1e874140-fab2-4f1c-b53f-28610dddfbd8.xml" />
+    <Content Include="AssetManagement\Reports\Data\2742b4e6-6bfa-477a-a75d-7ab692a1da2a.xml" />
+    <Content Include="AssetManagement\Reports\Data\27f3d756-e9a7-484f-9e13-1da94a78b845.xml" />
+    <Content Include="AssetManagement\Reports\Data\29c04e6c-1629-48c0-b372-e7861f88b24f.xml" />
+    <Content Include="AssetManagement\Reports\Data\2ce04651-fe5e-432c-82b3-f377ebfc46fc.xml" />
+    <Content Include="AssetManagement\Reports\Data\3456dfee-f17b-43eb-befc-d0fe82b1fec3.xml" />
+    <Content Include="AssetManagement\Reports\Data\35bef20a-de66-4447-a435-a78aaad6b88f.xml" />
+    <Content Include="AssetManagement\Reports\Data\3c640d2c-5071-44bb-93dc-ae77a2fd06a4.xml" />
+    <Content Include="AssetManagement\Reports\Data\3df81d89-e941-4dbd-91b6-e75ba8352614.xml" />
+    <Content Include="AssetManagement\Reports\Data\41105ed5-aa87-4f8d-a111-aac94673c6ba.xml" />
+    <Content Include="AssetManagement\Reports\Data\4237d36b-cc4f-40d7-ab1b-edc355476bb3.xml" />
+    <Content Include="AssetManagement\Reports\Data\44241115-4ca8-42a3-9604-193d41231f88.xml" />
+    <Content Include="AssetManagement\Reports\Data\472bcc66-7623-492f-9f0b-32780276c175.xml" />
+    <Content Include="AssetManagement\Reports\Data\48eb64a1-4caa-419c-836c-15c551821689.xml" />
+    <Content Include="AssetManagement\Reports\Data\4bc73a8b-91a4-4473-84f1-192f9cdcb003.xml" />
+    <Content Include="AssetManagement\Reports\Data\4d8bffcc-a74f-407c-b2e1-e8aecf5c21d6.xml" />
+    <Content Include="AssetManagement\Reports\Data\4e2ebaed-8549-4c24-90cc-481f39b6ec60.xml" />
+    <Content Include="AssetManagement\Reports\Data\54daa4b3-4ab6-4837-a667-8c127c13419f.xml" />
+    <Content Include="AssetManagement\Reports\Data\55738663-e34d-4f9e-a81e-0868932c1616.xml" />
+    <Content Include="AssetManagement\Reports\Data\5701e74d-c7c2-430f-9ea4-7c181a2cea62.xml" />
+    <Content Include="AssetManagement\Reports\Data\58739681-940f-4e6d-ba63-96c84759fecd.xml" />
+    <Content Include="AssetManagement\Reports\Data\5a38f4c8-bfa3-482b-9215-e1e19aa499d1.xml" />
+    <Content Include="AssetManagement\Reports\Data\5d6d001d-f304-457e-bc53-beee28e61ef7.xml" />
+    <Content Include="AssetManagement\Reports\Data\61a2469c-98b5-4ab1-a90c-0b04d074faf4.xml" />
+    <Content Include="AssetManagement\Reports\Data\6594dc44-ef98-4ad6-a101-0d0b93cf255b.xml" />
+    <Content Include="AssetManagement\Reports\Data\6703b3f0-a253-4a16-85f7-cadf8a832e03.xml" />
+    <Content Include="AssetManagement\Reports\Data\6a05d026-04ac-404a-aa26-f0b84a949e7b.xml" />
+    <Content Include="AssetManagement\Reports\Data\6b04a840-bebe-496d-b985-f6eb064019c8.xml" />
+    <Content Include="AssetManagement\Reports\Data\6c980063-912d-48a5-bc4b-bdf2768c7dbc.xml" />
+    <Content Include="AssetManagement\Reports\Data\6cd9fa78-42c9-4d85-b4b1-a71f9044ec30.xml" />
+    <Content Include="AssetManagement\Reports\Data\6ec5ff5d-d1f1-4da8-9bc3-a5a0ebca91ba.xml" />
+    <Content Include="AssetManagement\Reports\Data\7072876f-73b6-48b5-8849-6741d39e873e.xml" />
+    <Content Include="AssetManagement\Reports\Data\7073335b-400e-4674-856d-ff8b3570facd.xml" />
+    <Content Include="AssetManagement\Reports\Data\77b1d073-9332-4985-8047-eedff48a0fa4.xml" />
+    <Content Include="AssetManagement\Reports\Data\77dab8fc-4dd2-496b-bbd5-f523c78c9cf0.xml" />
+    <Content Include="AssetManagement\Reports\Data\7c909360-fe74-4833-8916-e63cd8b63455.xml" />
+    <Content Include="AssetManagement\Reports\Data\84ef7a1b-f756-4558-ac3d-a899599e7217.xml" />
+    <Content Include="AssetManagement\Reports\Data\872d3944-4e63-4287-86b7-a90fa6a53143.xml" />
+    <Content Include="AssetManagement\Reports\Data\8ded4211-b3bf-4c76-bf53-f1d8ae962133.xml" />
+    <Content Include="AssetManagement\Reports\Data\8e41086e-9c37-4b58-8dcc-73bf9114528d.xml" />
+    <Content Include="AssetManagement\Reports\Data\8f4d3e7e-dd16-4aaf-8515-d1dbef45a74d.xml" />
+    <Content Include="AssetManagement\Reports\Data\959ce0f4-268a-4744-8176-63ca11916230.xml" />
+    <Content Include="AssetManagement\Reports\Data\981ef2e7-86f9-4871-bdb6-78ac95388560.xml" />
+    <Content Include="AssetManagement\Reports\Data\9aeb8c2d-adec-45a0-b2b1-ab74492171ad.xml" />
+    <Content Include="AssetManagement\Reports\Data\9e411df6-87ab-4a5d-874f-5f1e68144454.xml" />
+    <Content Include="AssetManagement\Reports\Data\9f612edd-5093-45d2-bec1-272b4c36b4d5.xml" />
+    <Content Include="AssetManagement\Reports\Data\a1971d87-ca3b-48b8-a186-fea3d8e197b8.xml" />
+    <Content Include="AssetManagement\Reports\Data\ab1eb15a-2eba-4e75-b3e2-eb2d333a9eee.xml" />
+    <Content Include="AssetManagement\Reports\Data\abba5cf8-2266-403f-a65a-d15fab21e113.xml" />
+    <Content Include="AssetManagement\Reports\Data\ae37b6c7-05cc-4c95-b45b-69b906c9be2d.xml" />
+    <Content Include="AssetManagement\Reports\Data\ae6c57a6-6c38-462c-bdb9-c36dbf278300.xml" />
+    <Content Include="AssetManagement\Reports\Data\af92de79-ab84-4652-91e2-4cfcc8dea9be.xml" />
+    <Content Include="AssetManagement\Reports\Data\b3cd8958-66a8-422f-9a0f-7b53211ac73d.xml" />
+    <Content Include="AssetManagement\Reports\Data\b5f6a568-b2e4-4f40-aa83-ad3c60cba95e.xml" />
+    <Content Include="AssetManagement\Reports\Data\bae3f9f9-7577-49a5-baa7-5e4d5d843673.xml" />
+    <Content Include="AssetManagement\Reports\Data\bbb6ce7a-f7a7-48fc-bf2e-90e0e48614a5.xml" />
+    <Content Include="AssetManagement\Reports\Data\bd5433f2-e6a1-4e02-a1cf-f7aa2cc10f80.xml" />
+    <Content Include="AssetManagement\Reports\Data\c03eddec-e81c-4fb2-85a9-2355891db999.xml" />
+    <Content Include="AssetManagement\Reports\Data\c07b13ea-eafc-490f-8a4d-6b9be8af9c66.xml" />
+    <Content Include="AssetManagement\Reports\Data\c34acaea-58b7-4ead-bdef-c620f30b18da.xml" />
+    <Content Include="AssetManagement\Reports\Data\c3591894-2e54-4466-b9ac-52d78a1f89b3.xml" />
+    <Content Include="AssetManagement\Reports\Data\c37fbd76-0661-4f72-a33f-eefe08517ff4.xml" />
+    <Content Include="AssetManagement\Reports\Data\c3b61b4f-07fc-4fc5-9236-1f78dbd36373.xml" />
+    <Content Include="AssetManagement\Reports\Data\c3d3d1bb-b0d6-4599-8925-059f4f7067fa.xml" />
+    <Content Include="AssetManagement\Reports\Data\c4597dd2-b7b7-4863-b516-835a29cc5bad.xml" />
+    <Content Include="AssetManagement\Reports\Data\c4da4fdb-1ed5-4826-ac11-d9cd546e0fd2.xml" />
+    <Content Include="AssetManagement\Reports\Data\c5dacdb3-f3bd-4b4b-8796-af327cf99ea2.xml" />
+    <Content Include="AssetManagement\Reports\Data\c6d1c31d-0325-419f-92f7-2b31c8d36d72.xml" />
+    <Content Include="AssetManagement\Reports\Data\c77bbc9c-56a5-44e1-a43c-2c633107eb4f.xml" />
+    <Content Include="AssetManagement\Reports\Data\cdf5fcd0-3ac7-462e-b541-b96385b1d642.xml" />
+    <Content Include="AssetManagement\Reports\Data\ce9085c5-c9eb-40d1-90f7-941de941700c.xml" />
+    <Content Include="AssetManagement\Reports\Data\d2df0679-eaea-4bce-8bc4-09d62f8c20dd.xml" />
+    <Content Include="AssetManagement\Reports\Data\dcfcdfee-fec3-4c4c-a332-4ea66141f55f.xml" />
+    <Content Include="AssetManagement\Reports\Data\de56b9e6-2464-4c23-9a71-1000a4241923.xml" />
+    <Content Include="AssetManagement\Reports\Data\e53a2fe4-3f15-40bd-99e9-ef8ac21dde89.xml" />
+    <Content Include="AssetManagement\Reports\Data\e81986a2-f3c6-4821-9556-aa66ad9deba9.xml" />
+    <Content Include="AssetManagement\Reports\Data\e993cafe-b9d7-4087-b4c5-6f3cbfd95bbf.xml" />
+    <Content Include="AssetManagement\Reports\Data\ea307eb5-f1a4-40f0-a502-872003443b8e.xml" />
+    <Content Include="AssetManagement\Reports\Data\ec96dc6e-4620-49be-a175-4099a2ea9406.xml" />
+    <Content Include="AssetManagement\Reports\Data\efb92bde-df81-4fcd-8a63-3fbd9de4f07c.xml" />
+    <Content Include="AssetManagement\Reports\Data\efce97ba-fcb1-4d28-ba66-1bcae118495e.xml" />
+    <Content Include="AssetManagement\Reports\Data\f1ed7bfa-dd4e-4aa2-b831-c57e7dfc7d4c.xml" />
+    <Content Include="AssetManagement\Reports\Data\f74ce2ca-bcaf-4d48-bd44-082dc17d0903.xml" />
+    <Content Include="AssetManagement\Reports\Data\f9d8ad93-0fbf-405f-9fb1-63b2e335c479.xml" />
+    <Content Include="AssetManagement\Reports\Data\fa1a9c9d-c7d8-455c-b300-28b70c7606ad.xml" />
+    <Content Include="AssetManagement\Reports\Data\fb51ec9a-f910-4ad7-88a1-a49c59df07d4.xml" />
+    <Content Include="AuditManagement\Reports\Data\015b9471-90ad-4704-89d1-bad1ee4b787d.xml" />
+    <Content Include="AuditManagement\Reports\Data\04c160f6-cdb6-40b1-889a-e5cea19b567d.xml" />
+    <Content Include="AuditManagement\Reports\Data\04f03c8e-67c1-4c0e-b796-3520c6e71f6c.xml" />
+    <Content Include="AuditManagement\Reports\Data\054fddf0-8024-47dd-bb08-7bfab6bb643d.xml" />
+    <Content Include="AuditManagement\Reports\Data\055d58b6-f835-4933-b816-7333c232a443.xml" />
+    <Content Include="AuditManagement\Reports\Data\0aae56bf-5e9f-4df5-8dee-9432a0fcc16c.xml" />
+    <Content Include="AuditManagement\Reports\Data\0d04c34e-f597-4c22-9395-dea27dc01048.xml" />
+    <Content Include="AuditManagement\Reports\Data\0fc82212-a681-4a04-a2ad-1f1a1f19c100.xml" />
+    <Content Include="AuditManagement\Reports\Data\10d5b3d2-ff4d-4d2a-95c8-24b7a3bdaeff.xml" />
+    <Content Include="AuditManagement\Reports\Data\1713a344-f743-4584-ad00-7fb484d6a936.xml" />
+    <Content Include="AuditManagement\Reports\Data\1e93218b-ff49-4e58-9b57-ca9275a23454.xml" />
+    <Content Include="AuditManagement\Reports\Data\2a5acbed-a25d-46cf-a521-43ebc390d6b7.xml" />
+    <Content Include="AuditManagement\Reports\Data\2f9aa4c4-a34f-4cfd-9b2a-4c525cc23cbb.xml" />
+    <Content Include="AuditManagement\Reports\Data\31b9733c-53b9-4c4d-99b5-200d83b992fe.xml" />
+    <Content Include="AuditManagement\Reports\Data\31f2dc29-b12d-4bcf-801a-787cd97caaec.xml" />
+    <Content Include="AuditManagement\Reports\Data\35ce7244-e83d-4c06-8fd2-8f71b6a4d059.xml" />
+    <Content Include="AuditManagement\Reports\Data\3b73a491-06b6-4c02-bf52-2b660758edc8.xml" />
+    <Content Include="AuditManagement\Reports\Data\3b7e7e85-d3c4-4b77-a541-bbe0cb5266da.xml" />
+    <Content Include="AuditManagement\Reports\Data\3bc661d2-7c3c-446f-b0a1-31e0182df6df.xml" />
+    <Content Include="AuditManagement\Reports\Data\3be2d682-97bb-42c5-8460-04abcae45b92.xml" />
+    <Content Include="AuditManagement\Reports\Data\3ea5cb93-22f9-4e9f-b08b-1dbab0135745.xml" />
+    <Content Include="AuditManagement\Reports\Data\4fea9a87-37da-42c4-bf99-a213ef0ccc36.xml" />
+    <Content Include="AuditManagement\Reports\Data\519f300d-4599-48d8-8d2a-2fded196abb7.xml" />
+    <Content Include="AuditManagement\Reports\Data\527095be-3057-4e05-83a5-ea4ae415c146.xml" />
+    <Content Include="AuditManagement\Reports\Data\5d8508f2-d3df-4193-a7aa-9c3f29319f88.xml" />
+    <Content Include="AuditManagement\Reports\Data\60720329-66c4-4329-8fb9-e68cb7105e84.xml" />
+    <Content Include="AuditManagement\Reports\Data\61785512-8cf4-4adb-b166-a94ed7f5ce24.xml" />
+    <Content Include="AuditManagement\Reports\Data\61e0240d-13c8-4e82-8f89-1b78cd5e6492.xml" />
+    <Content Include="AuditManagement\Reports\Data\62981901-6d2c-498c-969d-9ab71b469950.xml" />
+    <Content Include="AuditManagement\Reports\Data\65665b07-1405-4a9d-94d1-40781849a995.xml" />
+    <Content Include="AuditManagement\Reports\Data\6704f0c5-2753-4be4-b274-a075672df640.xml" />
+    <Content Include="AuditManagement\Reports\Data\671f0ff2-e4e9-4458-9f09-bcb36989ab55.xml" />
+    <Content Include="AuditManagement\Reports\Data\6812c6ed-0f4a-4e81-9fae-9c60f4d5ff8a.xml" />
+    <Content Include="AuditManagement\Reports\Data\68169f87-94e9-42bf-91d6-2e5d6d728883.xml" />
+    <Content Include="AuditManagement\Reports\Data\6c5427ab-9068-4d8a-b2ce-9fbfb8b78b83.xml" />
+    <Content Include="AuditManagement\Reports\Data\6edd4e0c-d2c0-4cb4-86b3-4595da748e3d.xml" />
+    <Content Include="AuditManagement\Reports\Data\73bc4f88-b2e9-45f8-966f-64082ae707c6.xml" />
+    <Content Include="AuditManagement\Reports\Data\753a8f6d-a99b-4480-b7bb-7fccf974ca79.xml" />
+    <Content Include="AuditManagement\Reports\Data\7638af8e-90e1-4389-8206-75fee84a58c2.xml" />
+    <Content Include="AuditManagement\Reports\Data\76db28ba-d90c-4e93-833e-ffcb09caef00.xml" />
+    <Content Include="AuditManagement\Reports\Data\7a70d2a6-1723-42d1-9003-593d2334ed0b.xml" />
+    <Content Include="AuditManagement\Reports\Data\7ca2b509-a07b-4a5c-990e-2cada5a3778a.xml" />
+    <Content Include="AuditManagement\Reports\Data\8240a0b2-cdef-431a-9bc8-cd4cf6d225cc.xml" />
+    <Content Include="AuditManagement\Reports\Data\8ee6b48d-34ee-4a7e-9740-5f22800ffeb3.xml" />
+    <Content Include="AuditManagement\Reports\Data\93ff4ef4-664b-4571-a025-35ef8560b37e.xml" />
+    <Content Include="AuditManagement\Reports\Data\95167ed9-aa4c-4c28-be5d-0f0b6913ba0d.xml" />
+    <Content Include="AuditManagement\Reports\Data\973941bf-81b0-4a99-b441-89ff0a7f407c.xml" />
+    <Content Include="AuditManagement\Reports\Data\99561bac-2f9a-4bc8-9e81-624ee36f633f.xml" />
+    <Content Include="AuditManagement\Reports\Data\9ce585d7-ce6b-4e38-b833-d0c0f0cc245c.xml" />
+    <Content Include="AuditManagement\Reports\Data\9d4e8f58-6879-43d8-aecc-f9ed4462673b.xml" />
+    <Content Include="AuditManagement\Reports\Data\a312436d-9174-4d63-830a-ca4b3097d4cc.xml" />
+    <Content Include="AuditManagement\Reports\Data\a3728c42-2a52-4a7a-bd29-0014b66fc612.xml" />
+    <Content Include="AuditManagement\Reports\Data\a9d52e0a-297a-4933-b1c9-7885b5a13bf4.xml" />
+    <Content Include="AuditManagement\Reports\Data\ada6104e-45ef-46d9-bb1b-8ec40746889d.xml" />
+    <Content Include="AuditManagement\Reports\Data\b109b51f-2379-45ae-a3c4-f3898100cd26.xml" />
+    <Content Include="AuditManagement\Reports\Data\b9cfda3c-ff09-4b44-a657-384b9e326e2e.xml" />
+    <Content Include="AuditManagement\Reports\Data\bbc45bf2-81de-4960-8171-548ee5d5249a.xml" />
+    <Content Include="AuditManagement\Reports\Data\bd058be6-e1c0-4020-b2b4-6e4ee497a7ae.xml" />
+    <Content Include="AuditManagement\Reports\Data\be18227b-28a3-4d15-ba90-a1561d761c20.xml" />
+    <Content Include="AuditManagement\Reports\Data\c177e2ca-c89f-4eee-92df-b838111ab0ca.xml" />
+    <Content Include="AuditManagement\Reports\Data\c53d198c-f742-4ef5-a6f9-08ecb2ae9144.xml" />
+    <Content Include="AuditManagement\Reports\Data\ca9060da-2959-44a1-ac7b-44be5268d72c.xml" />
+    <Content Include="AuditManagement\Reports\Data\ccbba997-b5b3-4755-9a4c-8b0099e32d53.xml" />
+    <Content Include="AuditManagement\Reports\Data\d0fed4d8-a2ec-47d7-92fd-e05e3c0d179f.xml" />
+    <Content Include="AuditManagement\Reports\Data\d31eab5a-143b-4cfe-b255-fbce6f2141b3.xml" />
+    <Content Include="AuditManagement\Reports\Data\d4a14610-feff-4a8f-a2a3-c7bea984d0ac.xml" />
+    <Content Include="AuditManagement\Reports\Data\d4b06fc9-4881-41a3-9dee-561f7520fbb8.xml" />
+    <Content Include="AuditManagement\Reports\Data\d9e0eba3-9382-432f-a9ac-e93f47e992c7.xml" />
+    <Content Include="AuditManagement\Reports\Data\db7403f9-9aa0-40b2-a1cb-249d4932dd15.xml" />
+    <Content Include="AuditManagement\Reports\Data\dff1fa6b-7302-42de-9743-7106a2fac6bb.xml" />
+    <Content Include="AuditManagement\Reports\Data\e1a42d2d-b114-405c-9726-dbc47b7e9b59.xml" />
+    <Content Include="AuditManagement\Reports\Data\e29cfae3-155c-48dd-82cb-69f1238c3acf.xml" />
+    <Content Include="AuditManagement\Reports\Data\e2ef90d6-58e0-47fa-8127-ff32f42bc598.xml" />
+    <Content Include="AuditManagement\Reports\Data\e602a3ff-ef6f-4d52-883a-a2e07b527381.xml" />
+    <Content Include="AuditManagement\Reports\Data\e9f43875-37ec-447e-9b90-3c75254590eb.xml" />
+    <Content Include="AuditManagement\Reports\Data\ea23a6c3-ae76-46c8-aacd-0c971071ac0b.xml" />
+    <Content Include="AuditManagement\Reports\Data\ea7a3085-ee6d-4a48-8e0c-5a4b39f94c42.xml" />
+    <Content Include="AuditManagement\Reports\Data\ee6ca16a-3d6f-4a36-a54d-3904b2d1a253.xml" />
+    <Content Include="AuditManagement\Reports\Data\ef32e994-acba-4ce9-bed2-665ffac6fa75.xml" />
+    <Content Include="AuditManagement\Reports\Data\f10b6819-2bcb-4239-871a-2f47453640dd.xml" />
+    <Content Include="AuditManagement\Reports\Data\f44258d4-2788-4f87-ba27-67027696b7a5.xml" />
+    <Content Include="AuditManagement\Reports\Data\f666df1d-68e6-469f-9e07-107d77082317.xml" />
+    <Content Include="AuditManagement\Reports\Data\fa7c9b81-7d0c-44aa-9d73-43d1d788ec39.xml" />
+    <Content Include="bin\AjaxControlToolkit.dll" />
+    <Content Include="bin\AjaxMin.dll" />
+    <Content Include="bin\DataClasses.dll" />
+    <Content Include="bin\DataClasses.pdb" />
+    <Content Include="bin\HtmlAgilityPack.dll" />
+    <Content Include="bin\LicenseDataClasses.dll" />
+    <Content Include="bin\LicenseLINQConnection.dll" />
+    <Content Include="bin\LINQConnection.dll" />
+    <Content Include="bin\LINQConnection.pdb" />
+    <Content Include="bin\Microsoft.ReportViewer.Common.dll" />
+    <Content Include="bin\Microsoft.ReportViewer.ProcessingObjectModel.DLL" />
+    <Content Include="bin\Microsoft.SqlServer.Types.dll" />
+    <Content Include="bin\Utilities.dll" />
+    <Content Include="bin\Utilities.pdb" />
+    <Content Include="ChangeControl\Reports\Data\006abd94-9b4c-4f51-9f41-a6a9196e1008.xml" />
+    <Content Include="ChangeControl\Reports\Data\0111a96c-43fb-4119-94bd-49cd4c1540f4.xml" />
+    <Content Include="ChangeControl\Reports\Data\068eae02-6a62-498f-ae9c-9501ef783a24.xml" />
+    <Content Include="ChangeControl\Reports\Data\06f2eb48-b6a3-4d19-a49c-e7bd5b325eed.xml" />
+    <Content Include="ChangeControl\Reports\Data\0a9672eb-1169-4a19-97d1-358ae9f08f10.xml" />
+    <Content Include="ChangeControl\Reports\Data\0ac50f49-319e-49a0-9c45-88daeee86bd4.xml" />
+    <Content Include="ChangeControl\Reports\Data\0c897414-7fb6-4b22-9584-7cf5edeb4889.xml" />
+    <Content Include="ChangeControl\Reports\Data\0fec27a6-8031-4aa4-8ce5-07d6b5cfe1b0.xml" />
+    <Content Include="ChangeControl\Reports\Data\1042bf63-70f4-4f6b-bc8e-b3ab95f4e7ea.xml" />
+    <Content Include="ChangeControl\Reports\Data\164673f1-fd54-4051-8dfc-8e6b225bab1a.xml" />
+    <Content Include="ChangeControl\Reports\Data\174a9a5b-0214-4251-8a75-8f55505ac7d4.xml" />
+    <Content Include="ChangeControl\Reports\Data\1f9eb8f7-688b-4b85-8c62-c2d45db62e92.xml" />
+    <Content Include="ChangeControl\Reports\Data\24d3ec0e-c676-4e19-a51b-fa51a6ff8539.xml" />
+    <Content Include="ChangeControl\Reports\Data\26eef2fd-c7dd-46d6-acc6-9a3513a31e49.xml" />
+    <Content Include="ChangeControl\Reports\Data\279c8f69-2c39-4699-82a6-989ece956b7f.xml" />
+    <Content Include="ChangeControl\Reports\Data\27c0be33-aeee-4e3f-8c6f-ceffb8d8fefe.xml" />
+    <Content Include="ChangeControl\Reports\Data\2b1d38d2-14fd-436f-adcb-98e6cc3482f7.xml" />
+    <Content Include="ChangeControl\Reports\Data\2b30bd01-1b09-49ed-b8ae-2d5e450cd8c6.xml" />
+    <Content Include="ChangeControl\Reports\Data\30f183ca-9088-46d4-b0ce-de6436024424.xml" />
+    <Content Include="ChangeControl\Reports\Data\366bc4d4-e404-44cc-8cef-8292fb2a3594.xml" />
+    <Content Include="ChangeControl\Reports\Data\3d6c8bf3-97e0-4d6a-884f-13a954257e74.xml" />
+    <Content Include="ChangeControl\Reports\Data\4371c91a-1ff7-4fe8-8064-0d249946b562.xml" />
+    <Content Include="ChangeControl\Reports\Data\51a079f9-df64-48da-b54f-1b81ffb7e8cf.xml" />
+    <Content Include="ChangeControl\Reports\Data\52561042-4f75-43d6-80b4-95f5d95cf836.xml" />
+    <Content Include="ChangeControl\Reports\Data\5358a8bf-e2df-4e83-aec5-df1b71882656.xml" />
+    <Content Include="ChangeControl\Reports\Data\54c515bf-6c90-416d-a895-d1abb9b963b6.xml" />
+    <Content Include="ChangeControl\Reports\Data\5c0f76e2-5ecc-42c0-89e9-64241308206d.xml" />
+    <Content Include="ChangeControl\Reports\Data\67e7b0ca-d20a-4fd6-8082-f34c9921e4d1.xml" />
+    <Content Include="ChangeControl\Reports\Data\6a4fe2f2-1114-478a-b951-ff8dc8f850a9.xml" />
+    <Content Include="ChangeControl\Reports\Data\6e748a16-ee4e-4128-a706-6cb9a5256279.xml" />
+    <Content Include="ChangeControl\Reports\Data\71678e3c-e5be-4f6c-aef8-53d85715a49f.xml" />
+    <Content Include="ChangeControl\Reports\Data\7421c565-76b8-48e2-b910-445182ded29e.xml" />
+    <Content Include="ChangeControl\Reports\Data\791c6f5f-97d5-4fb9-8f73-3ddc2c6cd4b1.xml" />
+    <Content Include="ChangeControl\Reports\Data\7d257caa-61d5-4d8b-8478-d2084d97c22b.xml" />
+    <Content Include="ChangeControl\Reports\Data\8160640c-0959-4c5d-b3f3-fd7ac330ba77.xml" />
+    <Content Include="ChangeControl\Reports\Data\81881042-13cc-4285-a769-c70b15ac0d83.xml" />
+    <Content Include="ChangeControl\Reports\Data\86a9a0f8-79f1-4efa-b810-7e4734617c6b.xml" />
+    <Content Include="ChangeControl\Reports\Data\94686ae1-a5f3-4e79-b1cc-aa75a0c297af.xml" />
+    <Content Include="ChangeControl\Reports\Data\975803ee-2aa3-4b62-aa06-2c45f849ede0.xml" />
+    <Content Include="ChangeControl\Reports\Data\9995a0ae-243f-46e8-906c-d11c8124daa3.xml" />
+    <Content Include="ChangeControl\Reports\Data\9bb12686-531d-4728-a864-51be9a8451d0.xml" />
+    <Content Include="ChangeControl\Reports\Data\9c1cc926-28e0-4ecb-b4c7-070cdafce087.xml" />
+    <Content Include="ChangeControl\Reports\Data\a1da13ba-3751-4ffa-9a47-531e06acbf64.xml" />
+    <Content Include="ChangeControl\Reports\Data\a2eca231-e18d-4d93-b176-fb7e287ecd28.xml" />
+    <Content Include="ChangeControl\Reports\Data\a6218b2f-8cb4-4050-af94-c67b5a417690.xml" />
+    <Content Include="ChangeControl\Reports\Data\abb60f35-fae7-4258-8251-dbb1ce61f2ab.xml" />
+    <Content Include="ChangeControl\Reports\Data\b1e88638-7b10-43fa-8404-929b8f03ceca.xml" />
+    <Content Include="ChangeControl\Reports\Data\b26837a4-6e6f-4a6e-b369-1ca84b0bf984.xml" />
+    <Content Include="ChangeControl\Reports\Data\b28b321a-eab8-4766-931b-ae6288080270.xml" />
+    <Content Include="ChangeControl\Reports\Data\b9f038c9-e542-4695-b917-547e445ca677.xml" />
+    <Content Include="ChangeControl\Reports\Data\bb4b46ed-5721-485f-aa62-f9282294e513.xml" />
+    <Content Include="ChangeControl\Reports\Data\bb7abdb8-9465-4d4d-b384-c77cf4609989.xml" />
+    <Content Include="ChangeControl\Reports\Data\bde1cbbe-dd37-425b-9cdc-f7bbe3f47e39.xml" />
+    <Content Include="ChangeControl\Reports\Data\c0db7426-1f7c-4016-afa3-c128c89d7940.xml" />
+    <Content Include="ChangeControl\Reports\Data\c24af4bf-58cc-4df1-a0a3-63093718e701.xml" />
+    <Content Include="ChangeControl\Reports\Data\c966c1cc-7e8a-42fb-8e4a-143b45656152.xml" />
+    <Content Include="ChangeControl\Reports\Data\ce1abb1b-59a8-4fb0-8b6e-c82f0cf4e79a.xml" />
+    <Content Include="ChangeControl\Reports\Data\cf5464c9-adf8-4cfe-8a96-f0a6f48d01e9.xml" />
+    <Content Include="ChangeControl\Reports\Data\cfd3942b-b23d-48b1-a679-a6321eb4e682.xml" />
+    <Content Include="ChangeControl\Reports\Data\d5ae6bd2-3c99-4c2f-9dce-e087d9e81ef4.xml" />
+    <Content Include="ChangeControl\Reports\Data\d5f2d711-3748-4bcf-84e4-2cde8932b0d7.xml" />
+    <Content Include="ChangeControl\Reports\Data\ddfb92dd-a45d-4e14-aca0-c96a23c1c828.xml" />
+    <Content Include="ChangeControl\Reports\Data\e2453fc9-b8c0-4223-a6a1-8848374787e9.xml" />
+    <Content Include="ChangeControl\Reports\Data\ee31c905-8dcf-454e-b492-4d17943bd133.xml" />
+    <Content Include="ChangeControl\Reports\Data\ef412d50-1483-48ea-bcb6-e6689de4d164.xml" />
+    <Content Include="ChangeControl\Reports\Data\f05b4bf0-ad10-4387-93e2-e0c858035fc6.xml" />
+    <Content Include="ChangeControl\Reports\Data\f88f573d-131b-46b8-a5d8-b6ea6cf5b1a0.xml" />
+    <Content Include="ChangeControl\Reports\Data\fc3180d8-a673-4ed5-bda7-3138b8a5560e.xml" />
+    <Content Include="ChangeControl\Reports\Data\ff9d1bc2-9329-4445-98ad-9ecbd8e6a89c.xml" />
+    <Content Include="ChangeControl\Reports\Data\fff12afe-3d7b-4dac-ac9f-53c0205e4246.xml" />
+    <Content Include="CSS\bootstrap-multiselect.css" />
+    <Content Include="CSS\bootstrap.css" />
+    <Content Include="CSS\jquery.toastmessage.css" />
+    <Content Include="DocumentList\Reports\Data\062df022-4285-4e9f-a5a0-45f4e8b3ec4b.xml" />
+    <Content Include="DocumentList\Reports\Data\0e0b4524-ddc5-455e-9a67-ef31ca769040.xml" />
+    <Content Include="DocumentList\Reports\Data\150ed4e8-6a90-4c28-9b04-ec4047b2520b.xml" />
+    <Content Include="DocumentList\Reports\Data\1f0b1890-3f1f-4b71-9e89-26277e9d2e1f.xml" />
+    <Content Include="DocumentList\Reports\Data\20ac78f5-0590-4460-aa4f-c7f7d88c50c9.xml" />
+    <Content Include="DocumentList\Reports\Data\24ca000a-9898-4f7f-a80c-2bb6d144de68.xml" />
+    <Content Include="DocumentList\Reports\Data\2b8cacc8-b7a6-45a9-ba2e-b12dc8083f3e.xml" />
+    <Content Include="DocumentList\Reports\Data\35b2a708-c3d7-4a57-b884-232c2a6bc3f2.xml" />
+    <Content Include="DocumentList\Reports\Data\3643a9cc-f7b0-4195-9106-7b565ab43907.xml" />
+    <Content Include="DocumentList\Reports\Data\3715f290-a4be-4bb5-ad44-0d14ba95fcc9.xml" />
+    <Content Include="DocumentList\Reports\Data\38c5810c-1a1a-42df-b921-b7b365c32b77.xml" />
+    <Content Include="DocumentList\Reports\Data\3ef48439-f812-4a0d-8cbc-076c38389cbf.xml" />
+    <Content Include="DocumentList\Reports\Data\401a4f4c-942d-40e6-9dc2-452d4e76ccf6.xml" />
+    <Content Include="DocumentList\Reports\Data\6cfc252d-cc80-44c0-9ec1-67a11ca680e4.xml" />
+    <Content Include="DocumentList\Reports\Data\70384f78-1c64-4b4a-b0f2-d67bd65077aa.xml" />
+    <Content Include="DocumentList\Reports\Data\739869d9-6652-434a-950e-2c37ee6b92b7.xml" />
+    <Content Include="DocumentList\Reports\Data\75a2c813-0b4e-420e-ae8c-01bcfcf506e6.xml" />
+    <Content Include="DocumentList\Reports\Data\7654f422-1cb5-470f-a131-7ad2698313ae.xml" />
+    <Content Include="DocumentList\Reports\Data\7e03b2fb-76bc-46d3-979b-edaa228dfb13.xml" />
+    <Content Include="DocumentList\Reports\Data\7ebcddb8-6189-4156-81d9-4444a4e307c3.xml" />
+    <Content Include="DocumentList\Reports\Data\83f4941a-376b-4347-b5d8-10d72cda0207.xml" />
+    <Content Include="DocumentList\Reports\Data\8acec313-be92-45ed-8194-24f5b026ba03.xml" />
+    <Content Include="DocumentList\Reports\Data\8ccbb24b-0fd8-465b-a4b1-1b38f9322f70.xml" />
+    <Content Include="DocumentList\Reports\Data\95dfeb6f-b26d-4f4c-9001-cdb21e42ada4.xml" />
+    <Content Include="DocumentList\Reports\Data\97cdc2ff-f0c0-4ce8-ae79-4754fa280d2b.xml" />
+    <Content Include="DocumentList\Reports\Data\a97721ec-0a5f-4783-a6d6-951eb422afd4.xml" />
+    <Content Include="DocumentList\Reports\Data\ab7027f1-dad6-4f6a-a5d0-26c99c15e059.xml" />
+    <Content Include="DocumentList\Reports\Data\ad37a807-de7c-412c-afba-fd39be24210f.xml" />
+    <Content Include="DocumentList\Reports\Data\b13e9b53-1a45-46ec-9c29-037de42c09e0.xml" />
+    <Content Include="DocumentList\Reports\Data\b323cfe5-b511-40e3-8482-03ae2ba31155.xml" />
+    <Content Include="DocumentList\Reports\Data\b3c1672f-727a-45dd-ab94-7932ca3909e6.xml" />
+    <Content Include="DocumentList\Reports\Data\c1dddad4-56f5-478f-af4d-48a8112206e9.xml" />
+    <Content Include="DocumentList\Reports\Data\c9505e60-eedb-4b95-be27-50095cbe8c46.xml" />
+    <Content Include="DocumentList\Reports\Data\d0ff61c8-4887-42e8-9ff2-a0cecec6c85f.xml" />
+    <Content Include="DocumentList\Reports\Data\e33cf3e1-afaa-43ab-9ef0-68f931e1c4e2.xml" />
+    <Content Include="DocumentList\Reports\Data\eade75fd-b8bb-4ba2-9f57-c17285472882.xml" />
+    <Content Include="DocumentList\Reports\Data\efdd8437-279b-4db6-b716-511ee364d98f.xml" />
+    <Content Include="DocumentList\Reports\Data\f67a456f-8929-424d-a556-15836eb473ca.xml" />
+    <Content Include="EmployeeTraining\Calendar.aspx" />
+    <Content Include="EmployeeTraining\CourseFeedbackStatistics.aspx" />
+    <Content Include="EmployeeTraining\Reports\Data\058409d2-3355-464f-bd4e-a0e64f50bec5.xml" />
+    <Content Include="EmployeeTraining\Reports\Data\06bd8ded-7443-426e-bc08-a5856e9e9d4a.xml" />
+    <Content Include="EmployeeTraining\Reports\Data\16384570-ffa4-47ce-9217-a03764f886e3.xml" />
+    <Content Include="EmployeeTraining\Reports\Data\1919f392-781a-43f8-9ab2-edc43f0a547c.xml" />
+    <Content Include="EmployeeTraining\Reports\Data\1c9a94b7-c186-486c-8c6f-383df56fd837.xml" />
+    <Content Include="EmployeeTraining\Reports\Data\1d231683-7f1c-4c41-a7c0-1e8e66637a2e.xml" />
+    <Content Include="EmployeeTraining\Reports\Data\1e3e804e-d249-4248-b7bf-963be678cda0.xml" />
+    <Content Include="EmployeeTraining\Reports\Data\1f530c9d-994a-40c7-b368-639863607dd3.xml" />
+    <Content Include="EmployeeTraining\Reports\Data\26a21e55-75ca-472d-9762-bc960fd7ad57.xml" />
+    <Content Include="EmployeeTraining\Reports\Data\2c339926-d7d8-4401-b632-29ce60463e5f.xml" />
+    <Content Include="EmployeeTraining\Reports\Data\2fb616f0-ae21-45a6-a1c8-958be0e62744.xml" />
+    <Content Include="EmployeeTraining\Reports\Data\3622d703-2744-40e8-923e-1abce22c9566.xml" />
+    <Content Include="EmployeeTraining\Reports\Data\42db5916-7d20-4fec-a731-6f233fd594f6.xml" />
+    <Content Include="EmployeeTraining\Reports\Data\4e797209-4fe0-4732-888e-1e388b894d60.xml" />
+    <Content Include="EmployeeTraining\Reports\Data\5712e447-b8b2-4f17-9b85-4d68253a8eb7.xml" />
+    <Content Include="EmployeeTraining\Reports\Data\61446643-8369-4ed1-ac4a-e8404d7b2ec8.xml" />
+    <Content Include="EmployeeTraining\Reports\Data\635d3e22-316a-4e15-96c4-449ae2b57c0f.xml" />
+    <Content Include="EmployeeTraining\Reports\Data\6da021f1-8184-4c40-85fb-18d53dcd4234.xml" />
+    <Content Include="EmployeeTraining\Reports\Data\6fec1064-e89e-48c3-b78f-35b5d7019d92.xml" />
+    <Content Include="EmployeeTraining\Reports\Data\7a15af6d-7107-4639-b276-1b5030f3b165.xml" />
+    <Content Include="EmployeeTraining\Reports\Data\7a648742-a71d-4596-8ff9-de0ea88eb6e0.xml" />
+    <Content Include="EmployeeTraining\Reports\Data\839149a7-7a48-4de4-bcd9-780a29825ad2.xml" />
+    <Content Include="EmployeeTraining\Reports\Data\888c11f9-c760-4ea5-b415-96492ed04e60.xml" />
+    <Content Include="EmployeeTraining\Reports\Data\8eb93f63-4ef5-429a-ab82-4cbef981437a.xml" />
+    <Content Include="EmployeeTraining\Reports\Data\aa55bdb6-7d1c-4ac6-bd73-60f9f975d456.xml" />
+    <Content Include="EmployeeTraining\Reports\Data\ae972c96-ee2d-4d59-8025-6b95b6db9b71.xml" />
+    <Content Include="EmployeeTraining\Reports\Data\b33c2735-9c20-4bbf-af7c-2d1345c20e29.xml" />
+    <Content Include="EmployeeTraining\Reports\Data\b3a9be8d-3c7a-42af-b7cf-255a50239eee.xml" />
+    <Content Include="EmployeeTraining\Reports\Data\b5e61459-21ba-4cbf-8251-7468b35901d5.xml" />
+    <Content Include="EmployeeTraining\Reports\Data\b5eefac5-d279-4b9b-968f-4db426a9e14f.xml" />
+    <Content Include="EmployeeTraining\Reports\Data\b81c8729-e480-4ec8-abad-8d1c8e4645e4.xml" />
+    <Content Include="EmployeeTraining\Reports\Data\b95d357b-e442-446a-89a6-d07551d06862.xml" />
+    <Content Include="EmployeeTraining\Reports\Data\bd86a1d2-63fd-4cc0-b13d-7bbfbe8f1577.xml" />
+    <Content Include="EmployeeTraining\Reports\Data\bfec3b16-7f21-4f0c-b910-b8b4d2f7a9a6.xml" />
+    <Content Include="EmployeeTraining\Reports\Data\c6910199-7563-4f91-a566-0e7c20e08954.xml" />
+    <Content Include="EmployeeTraining\Reports\Data\c7d440d8-c71a-4f62-8294-3c315ad6543f.xml" />
+    <Content Include="EmployeeTraining\Reports\Data\ca62fac4-4f01-48a1-b964-551c2885609f.xml" />
+    <Content Include="EmployeeTraining\Reports\Data\d0ad3bc0-1bc4-42c2-b391-92b60b64aa72.xml" />
+    <Content Include="EmployeeTraining\Reports\Data\d85ea476-e102-4573-96b4-22ac54b0842e.xml" />
+    <Content Include="EmployeeTraining\Reports\Data\dd421a22-1a1a-4def-8dbe-c7925c08fae6.xml" />
+    <Content Include="EmployeeTraining\Reports\Data\de8a015a-4935-4ded-8c35-755dc2ba1d52.xml" />
+    <Content Include="EmployeeTraining\Reports\Data\ed269bce-fe40-4c38-9d74-3b0beaaef47c.xml" />
+    <Content Include="EmployeeTraining\Reports\Data\f40e73a8-2829-4885-9c3b-2795068a986e.xml" />
+    <Content Include="EmployeeTraining\Reports\Data\f54d8133-f9e7-483d-948c-5432f22b9d72.xml" />
+    <Content Include="EmployeeTraining\Reports\Data\f56b4836-7091-4db7-adcd-e250ec85f023.xml" />
+    <Content Include="EmployeeTraining\Reports\Data\fc39ff5e-6317-4fc9-85ef-615143200931.xml" />
+    <Content Include="EmployeeTraining\Reports\Data\fed0b5db-e830-4bde-bc75-a776303a551c.xml" />
+    <Content Include="EmployeeTraining\Reports\Data\ff72df44-d4b3-4367-b6dd-2ecea7361689.xml" />
+    <Content Include="HTML\About US.html" />
+    <Content Include="HTML\Appeals and Results Policy Controlled -QMSrs.html" />
+    <Content Include="HTML\Business Continuity and Disaster Recovery Policy Controlled -QMSrs.html" />
+    <Content Include="HTML\Business_Model.html" />
+    <Content Include="HTML\Code of Conduct Policy Controlled -QMSrs.html" />
+    <Content Include="HTML\Complaints Policy Controlled -QMSrs.html" />
+    <Content Include="HTML\Conflicts of Interest Policy Controlled -QMSrs.html" />
+    <Content Include="HTML\Contact US.html" />
+    <Content Include="HTML\Continous_Imporvment.html" />
+    <Content Include="HTML\Customer Order Processing Activities.html" />
+    <Content Include="HTML\Customer_Support.html" />
+    <Content Include="HTML\Data Protection Policy Controlled -QMSrs.html" />
+    <Content Include="HTML\Environmental  Policy Controlled -QMSrs.html" />
+    <Content Include="HTML\Glossary.htm" />
+    <Content Include="HTML\Health and Safety Policy Controlled -QMSrs.html" />
+    <Content Include="HTML\Internal processes.html" />
+    <Content Include="HTML\Internal Quality Assurance Policy Controlled -QMSrs.html" />
+    <Content Include="HTML\Malpractice and Maladministration Policy Controlled -QMSrs.html" />
+    <Content Include="HTML\Operation Process.html" />
+    <Content Include="HTML\Order_Processing.html" />
+    <Content Include="HTML\Organisation Structure-QMSrs.html" />
+    <Content Include="HTML\People_Welfare.html" />
+    <Content Include="HTML\Plagiarism and Cheating Policy Controlled -QMSrs.html" />
+    <Content Include="HTML\Press_Releases.html" />
+    <Content Include="HTML\Purchase_Order_Processing.html" />
+    <Content Include="HTML\QF.09-01-01 Individual Registration Form.html" />
+    <Content Include="HTML\QF.09-01-02 Delegate Registration Form.html" />
+    <Content Include="HTML\QF.09-02 Invoice.html" />
+    <Content Include="HTML\QF.09-03 Certificate Form.html" />
+    <Content Include="HTML\QF.09-04 Yearly Training Schedule.htm" />
+    <Content Include="HTML\QF.09-05 Participants List.html" />
+    <Content Include="HTML\QF.09-06 Attendance List .html" />
+    <Content Include="HTML\QF.09-07 Course Evaluation Form.html" />
+    <Content Include="HTML\QF.10-01 Consulting Services Request.html" />
+    <Content Include="HTML\QF.10-02QMSrs Basic Data Sheet.html" />
+    <Content Include="HTML\QF.10-03 QMS Consultation proposal %28 Technecal &amp; Commercial %29 .html" />
+    <Content Include="HTML\QF.10-04  Consulting_Visit_Report.html" />
+    <Content Include="HTML\QF.10-05  QMS Submission form.html" />
+    <Content Include="HTML\QMSrs Operations Manual.html" />
+    <Content Include="HTML\QMSrs-002-E-AsM-P.html" />
+    <Content Include="HTML\QMSrs-003-E-AM-P.html" />
+    <Content Include="HTML\QMSrs-003-E-AM-P1.html" />
+    <Content Include="HTML\QMSrs-005-E-DCR-P.html" />
+    <Content Include="HTML\QMSrs-005-E-DCR-P1.html" />
+    <Content Include="HTML\QMSrs-006-E-DM-P.html" />
+    <Content Include="HTML\QMSrs-007-E-ET-P.html" />
+    <Content Include="HTML\QMSrs-010-E-MR-P.html" />
+    <Content Include="HTML\QMSrs-011-E-PrM-P.html" />
+    <Content Include="HTML\QMSrs-011-E-PrM-P1.html" />
+    <Content Include="HTML\QMSrs-014-E-QR-P.html" />
+    <Content Include="HTML\QMSrs-015-E-RM-P.html" />
+    <Content Include="HTML\QMSrs-CP-001-E-DCP.html" />
+    <Content Include="HTML\QMSrs-CP-003-E-EAP.html" />
+    <Content Include="HTML\QMSrs-CP-004-E-HB.html" />
+    <Content Include="HTML\QMSrs-CP-005-E-CA.html" />
+    <Content Include="HTML\QMSrs-CP-006-E-DA.html" />
+    <Content Include="HTML\QMSrs-CP-007-E-TRA.html" />
+    <Content Include="HTML\QMSrs-CP-008-E-RG.html" />
+    <Content Include="HTML\QMSrs-CP-009-E.html" />
+    <Content Include="HTML\QMSrs-NDA-E1.1.html" />
+    <Content Include="HTML\QMSrsPolices.html" />
+    <Content Include="HTML\QMSrs_Objectives.html" />
+    <Content Include="HTML\Quality Records.html" />
+    <Content Include="HTML\Recognition of Prior Learning Policy Controlled -QMSrs.html" />
+    <Content Include="HTML\Sales and Marketing Activities.html" />
+    <Content Include="HTML\Supplier Development.html" />
+    <Content Include="HTML\Use of Language Policy Controlled -QMSrs.html" />
+    <Content Include="HTML\Who_is_Who.html" />
+    <Content Include="Images\close.gif" />
+    <Content Include="Images\download.png" />
+    <Content Include="Images\error.png" />
+    <Content Include="Images\help.png" />
+    <Content Include="Images\Login_Logo_01.gif" />
+    <Content Include="Images\Login_Logo_02.gif" />
+    <Content Include="Images\notice.png" />
+    <Content Include="Images\refresh_control.png" />
+    <Content Include="Images\Space.png" />
+    <Content Include="Images\success.png" />
+    <Content Include="JS\bootstrap-multiselect.js" />
+    <Content Include="JS\bootstrap.js" />
+    <Content Include="JS\jquery.toastmessage.js" />
+    <Content Include="JS\jsmatrix.js" />
+    <Content Include="JS\jsmatrixcell.js" />
+    <Content Include="JS\passwordstrength.js" />
+    <Content Include="Login.aspx" />
+    <Content Include="ManagementReviews\Reports\Data\149529a4-826d-4263-8922-4e97d50a0420.xml" />
+    <Content Include="ManagementReviews\Reports\Data\1b31c824-4857-47af-8cb5-cac99cbe2bb8.xml" />
+    <Content Include="ManagementReviews\Reports\Data\390ee84d-96ce-4b95-8d3c-c270746948e9.xml" />
+    <Content Include="ManagementReviews\Reports\Data\4bf6e195-35a0-43f0-bcbe-2b2b21d52432.xml" />
+    <Content Include="ManagementReviews\Reports\Data\5a81c12a-09a9-42e3-a408-a8a334dccd9b.xml" />
+    <Content Include="ManagementReviews\Reports\Data\7b26a6e5-d16c-4841-8926-489735d7c758.xml" />
+    <Content Include="ManagementReviews\Reports\Data\cd21bfbd-ffdd-4905-b1e6-1626a86b7779.xml" />
+    <Content Include="ManagementReviews\Reports\Data\e576f485-c754-42ab-8db5-c33374d4adee.xml" />
+    <Content Include="ProblemManagement\ApproveProblem.aspx" />
+    <Content Include="ProblemManagement\Reports\Data\01985c36-d214-431e-90bb-2909588e4fa0.xml" />
+    <Content Include="ProblemManagement\Reports\Data\041e8056-9820-4c9a-9806-9dbc114b4d1a.xml" />
+    <Content Include="ProblemManagement\Reports\Data\057437df-d833-46a2-993b-d8a0761277cb.xml" />
+    <Content Include="ProblemManagement\Reports\Data\0792e550-1e8e-4d3e-97be-e9608f008bfd.xml" />
+    <Content Include="ProblemManagement\Reports\Data\102b4881-e9b6-4479-8a54-ae346fc50aac.xml" />
+    <Content Include="ProblemManagement\Reports\Data\11dddd9a-3152-40e4-97a3-fce85fe7a296.xml" />
+    <Content Include="ProblemManagement\Reports\Data\164215fc-9225-465a-b568-8fad90a08c92.xml" />
+    <Content Include="ProblemManagement\Reports\Data\16d15715-5ad9-481a-9ed1-f665aa6bc880.xml" />
+    <Content Include="ProblemManagement\Reports\Data\1778c957-9136-4baf-bf84-76bf514e5fa3.xml" />
+    <Content Include="ProblemManagement\Reports\Data\1956c832-7ba2-4398-a8dc-b1834d7a1271.xml" />
+    <Content Include="ProblemManagement\Reports\Data\1cca7851-e2d1-4804-9383-8d0b112d5c7f.xml" />
+    <Content Include="ProblemManagement\Reports\Data\250b5c59-fa70-43df-b9ba-927e30dc40c1.xml" />
+    <Content Include="ProblemManagement\Reports\Data\2df9eb40-ea2e-42f7-b6c5-cedb2ffb6312.xml" />
+    <Content Include="ProblemManagement\Reports\Data\3399bbd6-c63a-4a73-9f7d-8d563d124e18.xml" />
+    <Content Include="ProblemManagement\Reports\Data\340264d9-29f1-4955-8101-7b1134d0fbf4.xml" />
+    <Content Include="ProblemManagement\Reports\Data\346812f0-11ee-4c2c-aeac-370663360d64.xml" />
+    <Content Include="ProblemManagement\Reports\Data\35218d27-ae58-4b56-a717-a42bfe01a146.xml" />
+    <Content Include="ProblemManagement\Reports\Data\35a7837a-29c1-4a05-ae47-fe3c029abd44.xml" />
+    <Content Include="ProblemManagement\Reports\Data\396109aa-c3ab-4315-a62d-d14474e04cba.xml" />
+    <Content Include="ProblemManagement\Reports\Data\3b798877-64c8-4ce7-bc11-da8e79e788dc.xml" />
+    <Content Include="ProblemManagement\Reports\Data\3cd5d8ec-d354-417c-a85a-4a72fad6830e.xml" />
+    <Content Include="ProblemManagement\Reports\Data\41725381-13c8-4e73-9291-b1805dcd9e08.xml" />
+    <Content Include="ProblemManagement\Reports\Data\42958088-8ee8-428d-943d-341dac7db9cb.xml" />
+    <Content Include="ProblemManagement\Reports\Data\4646f3c9-500a-452e-9e2b-f9a4fd5d4efd.xml" />
+    <Content Include="ProblemManagement\Reports\Data\49f516c9-1641-40c9-8fd8-421835da8a54.xml" />
+    <Content Include="ProblemManagement\Reports\Data\4aa2e708-056f-4865-b9a0-e4f6e201437b.xml" />
+    <Content Include="ProblemManagement\Reports\Data\4d718f15-ea13-44e2-957e-592320cccb88.xml" />
+    <Content Include="ProblemManagement\Reports\Data\53b05961-46cc-4370-aac3-db769a800ea9.xml" />
+    <Content Include="ProblemManagement\Reports\Data\578589d4-7e87-4b7b-9554-7da0164f8e0b.xml" />
+    <Content Include="ProblemManagement\Reports\Data\5d53c26d-7f3f-4140-90db-27834629ed99.xml" />
+    <Content Include="ProblemManagement\Reports\Data\6022f4a1-5d84-4821-963e-4df0f4041f50.xml" />
+    <Content Include="ProblemManagement\Reports\Data\65270f78-0763-4e3a-9d67-64a370882d70.xml" />
+    <Content Include="ProblemManagement\Reports\Data\6874a2af-ecd4-4f65-a097-dae6eef9b7c5.xml" />
+    <Content Include="ProblemManagement\Reports\Data\6a545e43-8096-4a89-acf9-3ca1d7086374.xml" />
+    <Content Include="ProblemManagement\Reports\Data\6debffc8-6366-4695-8cd9-5be567787b3d.xml" />
+    <Content Include="ProblemManagement\Reports\Data\6eb544c2-d584-435e-bcef-1ebfe8cb77c6.xml" />
+    <Content Include="ProblemManagement\Reports\Data\7193f9a7-2adb-4c1f-968c-853f2b03f401.xml" />
+    <Content Include="ProblemManagement\Reports\Data\71c6059d-28e2-47e4-8706-a7d663cb56c7.xml" />
+    <Content Include="ProblemManagement\Reports\Data\724b4d6b-f7e5-49da-a84c-05ff820d879d.xml" />
+    <Content Include="ProblemManagement\Reports\Data\72dda012-456f-4bf4-abb3-cb32c5dae137.xml" />
+    <Content Include="ProblemManagement\Reports\Data\7429e826-1e8b-4c98-b106-8d1b3e27b5cb.xml" />
+    <Content Include="ProblemManagement\Reports\Data\74fc12e3-7495-4776-b622-60cf04a0c014.xml" />
+    <Content Include="ProblemManagement\Reports\Data\78b328e1-4cae-48ff-8a74-6cbda2928752.xml" />
+    <Content Include="ProblemManagement\Reports\Data\7ea98ff9-13be-4edf-9019-44cd1a684de6.xml" />
+    <Content Include="ProblemManagement\Reports\Data\7f58cc48-d37c-4d04-8066-d4784eaf31a3.xml" />
+    <Content Include="ProblemManagement\Reports\Data\8275af99-23bd-4da9-9ee9-7aff76d568bc.xml" />
+    <Content Include="ProblemManagement\Reports\Data\82829a97-e05c-4b1f-92ea-5fcaaecf5b33.xml" />
+    <Content Include="ProblemManagement\Reports\Data\841d400e-a832-4594-825a-9d4b1894caf1.xml" />
+    <Content Include="ProblemManagement\Reports\Data\878983d3-d971-44fe-814e-2f12663a5bc7.xml" />
+    <Content Include="ProblemManagement\Reports\Data\89572b16-2fc1-4cc3-b29d-4825b2c27517.xml" />
+    <Content Include="ProblemManagement\Reports\Data\8dbd5755-0cda-49b9-b83e-ab1c461c82e4.xml" />
+    <Content Include="ProblemManagement\Reports\Data\8eb68eb7-d72e-4985-a77f-2b24183be5dc.xml" />
+    <Content Include="ProblemManagement\Reports\Data\8eeffb45-641a-4455-9147-43875e274493.xml" />
+    <Content Include="ProblemManagement\Reports\Data\90fb8707-c150-4a1e-93e2-7d621f4d451b.xml" />
+    <Content Include="ProblemManagement\Reports\Data\918bc2b1-c32f-4c4d-b087-b9e1d5b63c93.xml" />
+    <Content Include="ProblemManagement\Reports\Data\922a6a1c-9dac-47fd-a6c6-8813004bcf89.xml" />
+    <Content Include="ProblemManagement\Reports\Data\92b305d8-a835-4bcd-9262-83bf95777be7.xml" />
+    <Content Include="ProblemManagement\Reports\Data\9438580e-d731-4e10-b34d-18748cc85ff2.xml" />
+    <Content Include="ProblemManagement\Reports\Data\9654421d-dba1-4775-a786-a514fe0c2761.xml" />
+    <Content Include="ProblemManagement\Reports\Data\9991a56f-a74c-4bc4-8765-8d22c97dfa61.xml" />
+    <Content Include="ProblemManagement\Reports\Data\9aa99d55-4dbf-4586-a662-a37bbc2db87e.xml" />
+    <Content Include="ProblemManagement\Reports\Data\9d0b2086-7f82-48e2-b154-475780d23391.xml" />
+    <Content Include="ProblemManagement\Reports\Data\9fe76d7e-9481-4d32-a094-31f67d100ab6.xml" />
+    <Content Include="ProblemManagement\Reports\Data\9ffb3bde-6e2c-4060-abbb-d77ba831bd15.xml" />
+    <Content Include="ProblemManagement\Reports\Data\a083667e-032f-4780-8ada-5ccb2fb1075d.xml" />
+    <Content Include="ProblemManagement\Reports\Data\a1156e3e-a515-4bb2-b684-8b192529b3c4.xml" />
+    <Content Include="ProblemManagement\Reports\Data\a3570128-02e6-42e6-962d-28237381bb81.xml" />
+    <Content Include="ProblemManagement\Reports\Data\a585f257-465e-4a37-a8f6-3df527f409bb.xml" />
+    <Content Include="ProblemManagement\Reports\Data\aa146d1d-632e-484f-b476-0057b2ebf101.xml" />
+    <Content Include="ProblemManagement\Reports\Data\ad065816-f12f-44e9-8d97-3acab03d9052.xml" />
+    <Content Include="ProblemManagement\Reports\Data\b20086fa-6880-47c4-8944-cdda2a7d7c9e.xml" />
+    <Content Include="ProblemManagement\Reports\Data\b704e33f-7a25-48f1-b59c-f93983b62468.xml" />
+    <Content Include="ProblemManagement\Reports\Data\bbcebb88-c6dc-4095-a13e-9b0d9a6d760a.xml" />
+    <Content Include="ProblemManagement\Reports\Data\bc0fc453-7a63-40dc-897f-b26a161ef0a3.xml" />
+    <Content Include="ProblemManagement\Reports\Data\bc15f627-3252-4305-aba9-bba9b23c0bb1.xml" />
+    <Content Include="ProblemManagement\Reports\Data\bd707cb6-71b8-4a9c-93ee-ec28ab7ebc27.xml" />
+    <Content Include="ProblemManagement\Reports\Data\be9ee9a8-3499-4dfd-ae28-a7c419012d68.xml" />
+    <Content Include="ProblemManagement\Reports\Data\c11d4cbf-dbe1-49af-a2f7-0d1ac2b62f0e.xml" />
+    <Content Include="ProblemManagement\Reports\Data\c1a53682-41ff-4bef-aabe-d4e38eff7e16.xml" />
+    <Content Include="ProblemManagement\Reports\Data\c28e9dce-bf18-42e5-af8a-8dcf2cc40e78.xml" />
+    <Content Include="ProblemManagement\Reports\Data\c604515b-77cc-4902-9b10-12407d94484e.xml" />
+    <Content Include="ProblemManagement\Reports\Data\c63d57e8-9dba-44d2-91af-dc34734b4546.xml" />
+    <Content Include="ProblemManagement\Reports\Data\c6961327-2a41-4cd1-a35e-677b88c80505.xml" />
+    <Content Include="ProblemManagement\Reports\Data\c76c80b8-10b5-4c6a-81ad-d2f8e45c4246.xml" />
+    <Content Include="ProblemManagement\Reports\Data\c7b2a5ca-607b-4f0d-95a1-f6ee6d59867a.xml" />
+    <Content Include="ProblemManagement\Reports\Data\cbc1f22a-0bf1-4db0-b6d5-0ee3fa25f56a.xml" />
+    <Content Include="ProblemManagement\Reports\Data\cc32aa9e-fb9d-479c-8a16-83a1eb8a6eac.xml" />
+    <Content Include="ProblemManagement\Reports\Data\cc74466d-7e82-4d64-a8a8-da48dc5d8986.xml" />
+    <Content Include="ProblemManagement\Reports\Data\cc7826a3-e21a-49ca-abcf-d3745f9e140f.xml" />
+    <Content Include="ProblemManagement\Reports\Data\ce6a0ade-0c36-4eb8-9c5f-ccc62b49dfef.xml" />
+    <Content Include="ProblemManagement\Reports\Data\d123408c-9031-43c3-b188-15eadb04a743.xml" />
+    <Content Include="ProblemManagement\Reports\Data\d5a864d7-77c1-49f7-b371-0d471230fa35.xml" />
+    <Content Include="ProblemManagement\Reports\Data\d5ed88ad-ef81-407e-aadc-32405cb9de81.xml" />
+    <Content Include="ProblemManagement\Reports\Data\d68d7c25-b9be-4e0b-b648-6d403f75ae70.xml" />
+    <Content Include="ProblemManagement\Reports\Data\dd90a00d-4d96-4ad1-a58f-68ca869f5178.xml" />
+    <Content Include="ProblemManagement\Reports\Data\de3d4118-033d-4a9b-99b2-cf3843fd016b.xml" />
+    <Content Include="ProblemManagement\Reports\Data\de5d70a4-660a-47a8-b891-410dcbf7c2b0.xml" />
+    <Content Include="ProblemManagement\Reports\Data\e06cb049-0175-4b82-b1b6-f5692b239be3.xml" />
+    <Content Include="ProblemManagement\Reports\Data\e0926244-774a-47ef-9d93-b3d601b7acb1.xml" />
+    <Content Include="ProblemManagement\Reports\Data\e34f3cc1-2e89-4026-911c-af5c4c190a2b.xml" />
+    <Content Include="ProblemManagement\Reports\Data\e5322709-d8ca-4790-9e95-9b09d35f3c12.xml" />
+    <Content Include="ProblemManagement\Reports\Data\e5c35434-703f-48c8-b776-d833a12770b1.xml" />
+    <Content Include="ProblemManagement\Reports\Data\e66aa4bb-be17-4e78-852f-236d3db26f33.xml" />
+    <Content Include="ProblemManagement\Reports\Data\ea0b24b1-c6a5-454a-9655-9028cfd004a5.xml" />
+    <Content Include="ProblemManagement\Reports\Data\f01a2e62-2bbb-4c1c-83a4-7503b711cf95.xml" />
+    <Content Include="ProblemManagement\Reports\Data\f581c385-ccc2-4014-b42a-d1bcbbc89b88.xml" />
+    <Content Include="ProblemManagement\Reports\Data\f5d57825-0322-4083-8ede-698568eff3c0.xml" />
+    <Content Include="ProblemManagement\Reports\Data\f5feb42b-f00a-4a7b-8b04-1afbde61c51a.xml" />
+    <Content Include="ProblemManagement\Reports\Data\f6682359-8bb9-4856-b9dd-7ddcc6faf7ef.xml" />
+    <Content Include="ProblemManagement\Reports\Data\f69aa399-36b8-40fd-b41f-df2dd9414c6a.xml" />
+    <Content Include="ProblemManagement\Reports\Data\f89e3cd6-ef03-4eb4-989c-f6f1089d0bc8.xml" />
+    <Content Include="ProblemManagement\Reports\Data\fc21efdb-4b36-4193-870e-08203198ee22.xml" />
+    <Content Include="ProblemManagement\Reports\Data\fe6b8aea-7686-4b29-bc83-2c50a9f2b759.xml" />
+    <Content Include="ProblemManagement\Reports\Data\fe9e0851-9f26-4c92-bb99-8d6cf053fbce.xml" />
+    <Content Include="ProblemManagement\Reports\Data\ff7899a4-515e-43a9-a229-7feb1eab4f97.xml" />
+    <Content Include="ProblemManagement\Reports\Data\ff875b9f-0122-417a-8699-5ec6df114e54.xml" />
+    <Content Include="ProblemManagement\ViewProblems.aspx" />
+    <Content Include="QualityRecords\CreateNewRecord.aspx" />
+    <Content Include="QualityRecords\ManageRecords.aspx" />
+    <Content Include="RiskManagement\CreateMitigationAction.aspx" />
+    <Content Include="RiskManagement\CreateNewRisk.aspx" />
+    <Content Include="RiskManagement\ManageISO14001AssessmentGuide.aspx" />
+    <Content Include="RiskManagement\ManageMitigationAction.aspx" />
+    <Content Include="RiskManagement\ManageRisk.aspx" />
+    <Content Include="RiskManagement\ManageRiskCategory.aspx" />
+    <Content Include="Administration\ManageSeverity.aspx" />
+    <Content Include="Administration\ManageSMTP.aspx" />
+    <Content Include="AssetManagement\AcquisitionMethodStatistics.aspx" />
+    <Content Include="AssetManagement\AssetCategoryByOwner.aspx" />
+    <Content Include="AssetManagement\AssetCategoryBySupplier.aspx" />
+    <Content Include="AssetManagement\AssetList.aspx" />
+    <Content Include="AssetManagement\BillingCategoryStatistics.aspx" />
+    <Content Include="AssetManagement\CalibrationStatusStatistics.aspx" />
+    <Content Include="AssetManagement\CreateAsset.aspx" />
+    <Content Include="AssetManagement\ElectricalTestStatusStatistics.aspx" />
+    <Content Include="AssetManagement\ManageAsset.aspx" />
+    <Content Include="AssetManagement\ManageAssetStatus.aspx" />
+    <Content Include="AssetManagement\ManageCalibration.aspx" />
+    <Content Include="AssetManagement\ManageCalibrationStatus.aspx" />
+    <Content Include="AssetManagement\ManageDepreciation.aspx" />
+    <Content Include="AssetManagement\ManageDepreciationMethod.aspx" />
+    <Content Include="AssetManagement\ManageElectricalTest.aspx" />
+    <Content Include="AssetManagement\ManageElectricalTestStatus.aspx" />
+    <Content Include="AssetManagement\ManageMaintenance.aspx" />
+    <Content Include="AssetManagement\ManageMaintenanceStatus.aspx" />
+    <Content Include="AuditManagement\AuditListReport.aspx" />
+    <Content Include="AuditManagement\AuditReport.aspx" />
+    <Content Include="AuditManagement\ManageActionType.aspx" />
+    <Content Include="AuditManagement\ManageFindingType.aspx" />
+    <Content Include="ChangeControl\ApproveCCN.aspx" />
+    <Content Include="ChangeControl\CCNStatusBieChart.aspx" />
+    <Content Include="ChangeControl\CCNStatusMetrics.aspx" />
+    <Content Include="ChangeControl\CreateCCN.aspx" />
+    <Content Include="ChangeControl\ManageCCN.aspx" />
+    <Content Include="AssetManagement\ManageAcquisitionMethod.aspx" />
+    <Content Include="ChangeControl\ViewCCN.aspx" />
+    <Content Include="ContractManagement\ManageContractGroup.aspx" />
+    <Content Include="CSS\fullcalendar.css" />
+    <Content Include="CSS\fullcalendar.print.css" />
+    <Content Include="CSS\timePicker.css" />
+    <Content Include="DocumentList\CreateDocument.aspx" />
+    <Content Include="DocumentList\ManageDocument.aspx" />
+    <Content Include="DocumentList\OverdueDocuments.aspx" />
+    <Content Include="DocumentList\ViewDocuments.aspx" />
+    <Content Include="EmployeeManagement\CreateEmployee.aspx" />
+    <Content Include="EmployeeManagement\ManageAddress.aspx" />
+    <Content Include="EmployeeManagement\ManageEducation.aspx" />
+    <Content Include="EmployeeManagement\ManageEmployee.aspx" />
+    <Content Include="EmployeeManagement\ManageResidenceDocument.aspx" />
+    <Content Include="EmployeeTraining\AttendanceList.aspx" />
+    <Content Include="EmployeeTraining\CourseSchedule.aspx" />
+    <Content Include="EmployeeTraining\CourseVenueSchedule.aspx" />
+    <Content Include="EmployeeTraining\CreateCourse.aspx" />
+    <Content Include="EmployeeTraining\EmployeeEnrollment.aspx" />
+    <Content Include="EmployeeTraining\HeldCourses.aspx" />
+    <Content Include="EmployeeTraining\ManageCourseQuestion.aspx" />
+    <Content Include="EmployeeTraining\UserCourseVenueSchedule.aspx" />
+    <Content Include="EmployeeTraining\ViewCourse.aspx" />
+    <Content Include="EmployeeTraining\ViewCoursesReport.aspx" />
+    <Content Include="Images\archive.jpg" />
+    <Content Include="Images\feedback.jpg" />
+    <Content Include="Images\filter-delete-icon.png" />
+    <Content Include="Images\HTML_Info.gif" />
+    <Content Include="Images\Login_Logo_01.png" />
+    <Content Include="Images\Login_Logo_02.png" />
+    <Content Include="Images\Login_Logo_03.png" />
+    <Content Include="Images\Login_Logo_04.png" />
+    <Content Include="Images\Login_Logo_05.png" />
+    <Content Include="Images\Login_Logo_06.png" />
+    <Content Include="Images\Login_Logo_07.png" />
+    <Content Include="Images\LogoBackground.png" />
+    <Content Include="Images\QMSrslogo_01.jpg" />
+    <Content Include="Images\QMSrslogo_02.jpg" />
+    <Content Include="Images\QMSrslogo_03.jpg" />
+    <Content Include="Images\QMSrslogo_04.jpg" />
+    <Content Include="Images\schedule.jpg" />
+    <Content Include="Images\search.png" />
+    <Content Include="Images\spacer.gif" />
+    <Content Include="Images\undo.png" />
+    <Content Include="Images\visio.jpg" />
+    <Content Include="bin\Microsoft.ReportViewer.WebForms.dll" />
+    <Content Include="bin\QMSRSTools.dll" />
+    <Content Include="bin\QMSRSTools.pdb" />
+    <Content Include="CSS\codaslider.css" />
+    <Content Include="CSS\EN-Controls.css" />
+    <Content Include="CSS\EN-Master.css" />
+    <Content Include="CSS\EN-Modules.css" />
+    <Content Include="CSS\jqtree-ar.css" />
+    <Content Include="CSS\jqtree.css" />
+    <Content Include="CSS\jquery-ui-css.css" />
+    <Content Include="CSS\login.css" />
+    <Content Include="CSS\uploadify.css" />
+    <Content Include="DBService.asmx" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Images\1375852118_toggle-expand.png" />
+    <Content Include="Images\1375852219_toggle.png" />
+    <Content Include="Images\report.png" />
+    <Content Include="Images\sign-out.png" />
+    <Content Include="Images\add.png" />
+    <Content Include="Images\ajax-loader.gif" />
+    <Content Include="Images\Amber.gif" />
+    <Content Include="Images\arrow_left.png" />
+    <Content Include="Images\arrow_right.png" />
+    <Content Include="Images\arrow_select.png" />
+    <Content Include="Images\attach-icon.png" />
+    <Content Include="Images\cancel.png" />
+    <Content Include="Images\filter.png" />
+    <Content Include="Images\find.png" />
+    <Content Include="Images\settings.png" />
+    <Content Include="Images\control-loader.gif" />
+    <Content Include="Images\date-picker-icon.png" />
+    <Content Include="Images\default.png" />
+    <Content Include="Images\deletediv.png" />
+    <Content Include="Images\deletenode.png" />
+    <Content Include="Images\drop_icon.jpg" />
+    <Content Include="Images\edit.png" />
+    <Content Include="Images\grd_alt.png" />
+    <Content Include="Images\grd_head.png" />
+    <Content Include="Images\Green.gif" />
+    <Content Include="Images\Hiring.png" />
+    <Content Include="Images\jqtree-circle.png" />
+    <Content Include="Images\new.png" />
+    <Content Include="Images\new_file.png" />
+    <Content Include="Images\ORGStruct.png" />
+    <Content Include="Images\outlook.png" />
+    <Content Include="Images\Payroll.png" />
+    <Content Include="Images\person.jpg" />
+    <Content Include="Images\Personnel.png" />
+    <Content Include="Images\question_icon.jpg" />
+    <Content Include="Images\Red.gif" />
+    <Content Include="Images\refresh.png" />
+    <Content Include="Images\save.png" />
+    <Content Include="Images\scroll_left.png" />
+    <Content Include="Images\scroll_right.png" />
+    <Content Include="Images\select_icon.jpg" />
+    <Content Include="Images\TimeManagement.png" />
+    <Content Include="Images\uploadify-cancel.png" />
+    <Content Include="Images\wait-loader.gif" />
+    <Content Include="Images\Warning.png" />
+    <Content Include="AuditManagement\AuditSchedule.aspx" />
+    <Content Include="AuditManagement\CreateAction.aspx" />
+    <Content Include="AuditManagement\CreateAudit.aspx" />
+    <Content Include="AuditManagement\CreateFinding.aspx" />
+    <Content Include="AuditManagement\EditAction.aspx" />
+    <Content Include="AuditManagement\EditFinding.aspx" />
+    <Content Include="JS\date.js" />
+    <Content Include="JS\fullcalendar.js" />
+    <Content Include="JS\general.js" />
+    <Content Include="JS\jquery-1.9.1.js" />
+    <Content Include="JS\jquery-ui.custom.min.js" />
+    <Content Include="JS\jquery-ui.js" />
+    <Content Include="JS\jquery.fileupload.js" />
+    <Content Include="JS\jquery.iframe-transport.js" />
+    <Content Include="JS\jquery.serialScroll-1.2.1.js" />
+    <Content Include="JS\jquery.localscroll-1.2.5.js" />
+    <Content Include="JS\jquery.scrollTo-1.3.3.js" />
+    <Content Include="JS\jquery.timePicker.js" />
+    <Content Include="JS\jquery.uploadify.js" />
+    <Content Include="JS\jscell.js" />
+    <Content Include="JS\jstable.js" />
+    <Content Include="JS\textlimit.js" />
+    <Content Include="JS\tree.jquery.js" />
+    <Content Include="JS\validation.js" />
+    <Content Include="ManagementReviews\AnnualReviewTasks.aspx" />
+    <Content Include="ManagementReviews\CreateReview.aspx" />
+    <Content Include="ManagementReviews\CreateTask.aspx" />
+    <Content Include="ManagementReviews\CreateTaskAction.aspx" />
+    <Content Include="ManagementReviews\ManagementReviewActionList.aspx" />
+    <Content Include="ManagementReviews\ManagementReviewList.aspx" />
+    <Content Include="ManagementReviews\ManageTask.aspx" />
+    <Content Include="ManagementReviews\ManageTaskAction.aspx" />
+    <Content Include="ManagementReviews\ManageTaskActionType.aspx" />
+    <Content Include="ManagementReviews\ReviewCategory.aspx" />
+    <Content Include="ManagementReviews\ReviewSchedule.aspx" />
+    <Content Include="obj\Debug\QMSRSTools.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\QMSRSTools.dll" />
+    <Content Include="obj\Debug\QMSRSTools.pdb" />
+    <Content Include="OrganizationManagement\CreatePosition.aspx" />
+    <Content Include="OrganizationManagement\ManagePosition.aspx" />
+    <Content Include="OrganizationManagement\OrganizationLevel.aspx" />
+    <Content Include="OrganizationManagement\OrganizationStructure.aspx" />
+    <Content Include="ProblemManagement\CreateProblem.aspx" />
+    <Content Include="ProblemManagement\CreateProblemAction.aspx" />
+    <Content Include="ProblemManagement\ManageProblemActions.aspx" />
+    <Content Include="ProblemManagement\ManageProblems.aspx" />
+    <Content Include="ProblemManagement\ManageProblemType.aspx" />
+    <Content Include="ProjectManagement\CreateProject.aspx" />
+    <Content Include="ProjectManagement\ManageProject.aspx" />
+    <Content Include="Reports\Flash\fcp-bars.swf" />
+    <Content Include="Reports\Flash\fcp-pie-chart.swf" />
+    <Content Include="AuditManagement\AuditActionList.aspx" />
+    <Content Include="AuditManagement\Findings.aspx" />
+    <Content Include="AuditManagement\ISOClauses.aspx" />
+    <Content Include="AuditManagement\RAGAnalysisActions.aspx" />
+    <Content Include="AuditManagement\RAGAnalysisAudits.aspx" />
+    <Content Include="AuditManagement\RootCause.aspx" />
+    <Content Include="ProblemManagement\AnnualProblems.aspx" />
+    <Content Include="ProblemManagement\ProblemBySeverity.aspx" />
+    <Content Include="ProblemManagement\ProblemsByRootCause.aspx" />
+    <Content Include="ProblemManagement\ProblemsByStatus.aspx" />
+    <Content Include="ProblemManagement\RAGAnalysisofActions.aspx" />
+    <Content Include="ProblemManagement\ViewActions.aspx" />
+    <Content Include="ProblemManagement\ViewActionStatistics.aspx" />
+    <Content Include="RiskManagement\ManageRiskCriteria.aspx" />
+    <Content Include="RiskManagement\ManageRiskFormulas.aspx" />
+    <Content Include="RiskManagement\ManageRiskScoreCriteria.aspx" />
+    <Content Include="RiskManagement\RiskMaintenance.aspx" />
+    <Content Include="RiskManagement\ViewRisks.aspx" />
+    <Content Include="JS\moment-with-locales.js" />
+    <Content Include="JS\moment.js" />
+    <Content Include="TerminateSession.aspx" />
+    <Content Include="VisioLinks\Business_Development.aspx" />
+    <Content Include="VisioLinks\Customer_Billing.aspx" />
+    <Content Include="VisioLinks\Customer_Order_Handling.aspx" />
+    <Content Include="VisioLinks\Enviroments_Welfare.aspx" />
+    <Content Include="VisioLinks\Order_Fulfilment.aspx" />
+    <Content Include="VisioLinks\Purchasing_Verification.aspx" />
+    <Content Include="VisioLinks\Security_Management.aspx" />
+    <Content Include="VisioLinks\Strategy_and_Mission_Statement.aspx" />
+    <Content Include="VisioLinks\WI_Admin_Tools.aspx" />
+    <Content Include="VisioLinks\WI_Asset_Management.aspx" />
+    <Content Include="VisioLinks\WI_CCN.aspx" />
+    <Content Include="VisioLinks\WI_Document_List.aspx" />
+    <Content Include="VisioLinks\WI_Employee_Training.aspx" />
+    <Content Include="VisioLinks\WI_Incident.aspx" />
+    <Content Include="VisioLinks\WI_Internal_Audits.aspx" />
+    <Content Include="VisioLinks\WI_Management_Review.aspx" />
+    <Content Include="VisioLinks\WI_Risk_Management.aspx" />
+    <Content Include="Visio\Process.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="WI\QMSrs-002-E-AsM-WI.html" />
+    <Content Include="WI\QMSrs-003-E-AM-WI.html" />
+    <Content Include="WI\QMSrs-005-E-DCR-WI.html" />
+    <Content Include="WI\QMSrs-006-E-DM-WI.html" />
+    <Content Include="WI\QMSrs-007-E-ET-CD.html" />
+    <Content Include="WI\QMSrs-010-E-MR-WI.html" />
+    <Content Include="WI\QMSrs-011-E-PrM-WI.html" />
+    <Content Include="WI\QMSrs-015-E-RM-WI.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssetManagement\AssetListByCategory.aspx.cs">
+      <DependentUpon>AssetListByCategory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AssetManagement\AssetListByCategory.aspx.designer.cs">
+      <DependentUpon>AssetListByCategory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AssetManagement\ManageAssetCategory.aspx.cs">
+      <DependentUpon>ManageAssetCategory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AssetManagement\ManageAssetCategory.aspx.designer.cs">
+      <DependentUpon>ManageAssetCategory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\ManageAuthorization.aspx.cs">
+      <DependentUpon>ManageAuthorization.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\ManageAuthorization.aspx.designer.cs">
+      <DependentUpon>ManageAuthorization.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\ManageBillingCategory.aspx.cs">
+      <DependentUpon>ManageBillingCategory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\ManageBillingCategory.aspx.designer.cs">
+      <DependentUpon>ManageBillingCategory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\ManageCauses.aspx.cs">
+      <DependentUpon>ManageCauses.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\ManageCauses.aspx.designer.cs">
+      <DependentUpon>ManageCauses.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\ManageCostCentre.aspx.cs">
+      <DependentUpon>ManageCostCentre.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\ManageCostCentre.aspx.designer.cs">
+      <DependentUpon>ManageCostCentre.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\ManageCustomer.aspx.cs">
+      <DependentUpon>ManageCustomer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\ManageCustomer.aspx.designer.cs">
+      <DependentUpon>ManageCustomer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\ManageDocumentFileType.aspx.cs">
+      <DependentUpon>ManageDocumentFileType.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\ManageDocumentFileType.aspx.designer.cs">
+      <DependentUpon>ManageDocumentFileType.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\ManageEmailTemplate.aspx.cs">
+      <DependentUpon>ManageEmailTemplate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\ManageEmailTemplate.aspx.designer.cs">
+      <DependentUpon>ManageEmailTemplate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\ManageISO.aspx.cs">
+      <DependentUpon>ManageISO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\ManageISO.aspx.designer.cs">
+      <DependentUpon>ManageISO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\ManageRAGCondition.aspx.cs">
+      <DependentUpon>ManageRAGCondition.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\ManageRAGCondition.aspx.designer.cs">
+      <DependentUpon>ManageRAGCondition.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeTraining\Calendar.aspx.cs">
+      <DependentUpon>Calendar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmployeeTraining\Calendar.aspx.designer.cs">
+      <DependentUpon>Calendar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeTraining\CourseFeedbackStatistics.aspx.cs">
+      <DependentUpon>CourseFeedbackStatistics.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmployeeTraining\CourseFeedbackStatistics.aspx.designer.cs">
+      <DependentUpon>CourseFeedbackStatistics.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormulaHandler.ashx.cs">
+      <DependentUpon>FormulaHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage\Site3.Master.cs">
+      <DependentUpon>Site3.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage\Site3.Master.designer.cs">
+      <DependentUpon>Site3.Master</DependentUpon>
+    </Compile>
+    <Compile Include="ProblemManagement\ApproveProblem.aspx.cs">
+      <DependentUpon>ApproveProblem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProblemManagement\ApproveProblem.aspx.designer.cs">
+      <DependentUpon>ApproveProblem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProblemManagement\ViewProblems.aspx.cs">
+      <DependentUpon>ViewProblems.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProblemManagement\ViewProblems.aspx.designer.cs">
+      <DependentUpon>ViewProblems.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QMSRSToolsENRDLCDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QMSRSToolsENRDLCDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QualityRecords\CreateNewRecord.aspx.cs">
+      <DependentUpon>CreateNewRecord.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QualityRecords\CreateNewRecord.aspx.designer.cs">
+      <DependentUpon>CreateNewRecord.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QualityRecords\ManageRecords.aspx.cs">
+      <DependentUpon>ManageRecords.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QualityRecords\ManageRecords.aspx.designer.cs">
+      <DependentUpon>ManageRecords.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RiskManagement\CreateMitigationAction.aspx.cs">
+      <DependentUpon>CreateMitigationAction.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RiskManagement\CreateMitigationAction.aspx.designer.cs">
+      <DependentUpon>CreateMitigationAction.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RiskManagement\CreateNewRisk.aspx.cs">
+      <DependentUpon>CreateNewRisk.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RiskManagement\CreateNewRisk.aspx.designer.cs">
+      <DependentUpon>CreateNewRisk.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RiskManagement\ManageISO14001AssessmentGuide.aspx.cs">
+      <DependentUpon>ManageISO14001AssessmentGuide.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RiskManagement\ManageISO14001AssessmentGuide.aspx.designer.cs">
+      <DependentUpon>ManageISO14001AssessmentGuide.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RiskManagement\ManageMitigationAction.aspx.cs">
+      <DependentUpon>ManageMitigationAction.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RiskManagement\ManageMitigationAction.aspx.designer.cs">
+      <DependentUpon>ManageMitigationAction.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RiskManagement\ManageRisk.aspx.cs">
+      <DependentUpon>ManageRisk.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RiskManagement\ManageRisk.aspx.designer.cs">
+      <DependentUpon>ManageRisk.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RiskManagement\ManageRiskCategory.aspx.cs">
+      <DependentUpon>ManageRiskCategory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RiskManagement\ManageRiskCategory.aspx.designer.cs">
+      <DependentUpon>ManageRiskCategory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\ManageSeverity.aspx.cs">
+      <DependentUpon>ManageSeverity.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\ManageSeverity.aspx.designer.cs">
+      <DependentUpon>ManageSeverity.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\ManageSMTP.aspx.cs">
+      <DependentUpon>ManageSMTP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\ManageSMTP.aspx.designer.cs">
+      <DependentUpon>ManageSMTP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AssetManagement\AcquisitionMethodStatistics.aspx.cs">
+      <DependentUpon>AcquisitionMethodStatistics.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AssetManagement\AcquisitionMethodStatistics.aspx.designer.cs">
+      <DependentUpon>AcquisitionMethodStatistics.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AssetManagement\AssetCategoryByOwner.aspx.cs">
+      <DependentUpon>AssetCategoryByOwner.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AssetManagement\AssetCategoryByOwner.aspx.designer.cs">
+      <DependentUpon>AssetCategoryByOwner.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AssetManagement\AssetCategoryBySupplier.aspx.cs">
+      <DependentUpon>AssetCategoryBySupplier.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AssetManagement\AssetCategoryBySupplier.aspx.designer.cs">
+      <DependentUpon>AssetCategoryBySupplier.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AssetManagement\AssetList.aspx.cs">
+      <DependentUpon>AssetList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AssetManagement\AssetList.aspx.designer.cs">
+      <DependentUpon>AssetList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AssetManagement\BillingCategoryStatistics.aspx.cs">
+      <DependentUpon>BillingCategoryStatistics.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AssetManagement\BillingCategoryStatistics.aspx.designer.cs">
+      <DependentUpon>BillingCategoryStatistics.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AssetManagement\CalibrationStatusStatistics.aspx.cs">
+      <DependentUpon>CalibrationStatusStatistics.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AssetManagement\CalibrationStatusStatistics.aspx.designer.cs">
+      <DependentUpon>CalibrationStatusStatistics.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AssetManagement\CreateAsset.aspx.cs">
+      <DependentUpon>CreateAsset.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AssetManagement\CreateAsset.aspx.designer.cs">
+      <DependentUpon>CreateAsset.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AssetManagement\ElectricalTestStatusStatistics.aspx.cs">
+      <DependentUpon>ElectricalTestStatusStatistics.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AssetManagement\ElectricalTestStatusStatistics.aspx.designer.cs">
+      <DependentUpon>ElectricalTestStatusStatistics.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AssetManagement\ManageAsset.aspx.cs">
+      <DependentUpon>ManageAsset.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AssetManagement\ManageAsset.aspx.designer.cs">
+      <DependentUpon>ManageAsset.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AssetManagement\ManageAssetStatus.aspx.cs">
+      <DependentUpon>ManageAssetStatus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AssetManagement\ManageAssetStatus.aspx.designer.cs">
+      <DependentUpon>ManageAssetStatus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AssetManagement\ManageCalibration.aspx.cs">
+      <DependentUpon>ManageCalibration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AssetManagement\ManageCalibration.aspx.designer.cs">
+      <DependentUpon>ManageCalibration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AssetManagement\ManageCalibrationStatus.aspx.cs">
+      <DependentUpon>ManageCalibrationStatus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AssetManagement\ManageCalibrationStatus.aspx.designer.cs">
+      <DependentUpon>ManageCalibrationStatus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AssetManagement\ManageDepreciation.aspx.cs">
+      <DependentUpon>ManageDepreciation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AssetManagement\ManageDepreciation.aspx.designer.cs">
+      <DependentUpon>ManageDepreciation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AssetManagement\ManageDepreciationMethod.aspx.cs">
+      <DependentUpon>ManageDepreciationMethod.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AssetManagement\ManageDepreciationMethod.aspx.designer.cs">
+      <DependentUpon>ManageDepreciationMethod.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AssetManagement\ManageElectricalTest.aspx.cs">
+      <DependentUpon>ManageElectricalTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AssetManagement\ManageElectricalTest.aspx.designer.cs">
+      <DependentUpon>ManageElectricalTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AssetManagement\ManageElectricalTestStatus.aspx.cs">
+      <DependentUpon>ManageElectricalTestStatus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AssetManagement\ManageElectricalTestStatus.aspx.designer.cs">
+      <DependentUpon>ManageElectricalTestStatus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AssetManagement\ManageMaintenance.aspx.cs">
+      <DependentUpon>ManageMaintenance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AssetManagement\ManageMaintenance.aspx.designer.cs">
+      <DependentUpon>ManageMaintenance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AssetManagement\ManageMaintenanceStatus.aspx.cs">
+      <DependentUpon>ManageMaintenanceStatus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AssetManagement\ManageMaintenanceStatus.aspx.designer.cs">
+      <DependentUpon>ManageMaintenanceStatus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditManagement\AuditListReport.aspx.cs">
+      <DependentUpon>AuditListReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditManagement\AuditListReport.aspx.designer.cs">
+      <DependentUpon>AuditListReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditManagement\AuditReport.aspx.cs">
+      <DependentUpon>AuditReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditManagement\AuditReport.aspx.designer.cs">
+      <DependentUpon>AuditReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditManagement\ManageActionType.aspx.cs">
+      <DependentUpon>ManageActionType.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditManagement\ManageActionType.aspx.designer.cs">
+      <DependentUpon>ManageActionType.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditManagement\ManageFindingType.aspx.cs">
+      <DependentUpon>ManageFindingType.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditManagement\ManageFindingType.aspx.designer.cs">
+      <DependentUpon>ManageFindingType.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ChangeControl\ApproveCCN.aspx.cs">
+      <DependentUpon>ApproveCCN.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChangeControl\ApproveCCN.aspx.designer.cs">
+      <DependentUpon>ApproveCCN.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ChangeControl\CCNStatusBieChart.aspx.cs">
+      <DependentUpon>CCNStatusBieChart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChangeControl\CCNStatusBieChart.aspx.designer.cs">
+      <DependentUpon>CCNStatusBieChart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ChangeControl\CCNStatusMetrics.aspx.cs">
+      <DependentUpon>CCNStatusMetrics.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChangeControl\CCNStatusMetrics.aspx.designer.cs">
+      <DependentUpon>CCNStatusMetrics.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ChangeControl\CreateCCN.aspx.cs">
+      <DependentUpon>CreateCCN.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChangeControl\CreateCCN.aspx.designer.cs">
+      <DependentUpon>CreateCCN.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ChangeControl\ManageCCN.aspx.cs">
+      <DependentUpon>ManageCCN.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChangeControl\ManageCCN.aspx.designer.cs">
+      <DependentUpon>ManageCCN.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ChangeControl\ViewCCN.aspx.cs">
+      <DependentUpon>ViewCCN.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChangeControl\ViewCCN.aspx.designer.cs">
+      <DependentUpon>ViewCCN.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AssetManagement\ManageAcquisitionMethod.aspx.cs">
+      <DependentUpon>ManageAcquisitionMethod.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AssetManagement\ManageAcquisitionMethod.aspx.designer.cs">
+      <DependentUpon>ManageAcquisitionMethod.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContractManagement\ManageContractGroup.aspx.cs">
+      <DependentUpon>ManageContractGroup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContractManagement\ManageContractGroup.aspx.designer.cs">
+      <DependentUpon>ManageContractGroup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlRenderer.ashx.cs">
+      <DependentUpon>ControlRenderer.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="DBService.asmx.cs">
+      <DependentUpon>DBService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentDownload.ashx.cs">
+      <DependentUpon>DocumentDownload.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentList\CreateDocument.aspx.cs">
+      <DependentUpon>CreateDocument.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DocumentList\CreateDocument.aspx.designer.cs">
+      <DependentUpon>CreateDocument.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentList\ManageDocument.aspx.cs">
+      <DependentUpon>ManageDocument.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DocumentList\ManageDocument.aspx.designer.cs">
+      <DependentUpon>ManageDocument.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentList\OverdueDocuments.aspx.cs">
+      <DependentUpon>OverdueDocuments.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DocumentList\OverdueDocuments.aspx.designer.cs">
+      <DependentUpon>OverdueDocuments.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentList\ViewDocuments.aspx.cs">
+      <DependentUpon>ViewDocuments.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DocumentList\ViewDocuments.aspx.designer.cs">
+      <DependentUpon>ViewDocuments.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeManagement\CreateEmployee.aspx.cs">
+      <DependentUpon>CreateEmployee.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmployeeManagement\CreateEmployee.aspx.designer.cs">
+      <DependentUpon>CreateEmployee.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeManagement\ManageAddress.aspx.cs">
+      <DependentUpon>ManageAddress.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmployeeManagement\ManageAddress.aspx.designer.cs">
+      <DependentUpon>ManageAddress.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeManagement\ManageEducation.aspx.cs">
+      <DependentUpon>ManageEducation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmployeeManagement\ManageEducation.aspx.designer.cs">
+      <DependentUpon>ManageEducation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeManagement\ManageEmployee.aspx.cs">
+      <DependentUpon>ManageEmployee.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmployeeManagement\ManageEmployee.aspx.designer.cs">
+      <DependentUpon>ManageEmployee.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeManagement\ManageResidenceDocument.aspx.cs">
+      <DependentUpon>ManageResidenceDocument.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmployeeManagement\ManageResidenceDocument.aspx.designer.cs">
+      <DependentUpon>ManageResidenceDocument.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeTraining\AttendanceList.aspx.cs">
+      <DependentUpon>AttendanceList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmployeeTraining\AttendanceList.aspx.designer.cs">
+      <DependentUpon>AttendanceList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeTraining\CourseSchedule.aspx.cs">
+      <DependentUpon>CourseSchedule.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmployeeTraining\CourseSchedule.aspx.designer.cs">
+      <DependentUpon>CourseSchedule.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeTraining\CourseVenueSchedule.aspx.cs">
+      <DependentUpon>CourseVenueSchedule.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmployeeTraining\CourseVenueSchedule.aspx.designer.cs">
+      <DependentUpon>CourseVenueSchedule.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeTraining\CreateCourse.aspx.cs">
+      <DependentUpon>CreateCourse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmployeeTraining\CreateCourse.aspx.designer.cs">
+      <DependentUpon>CreateCourse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeTraining\EmployeeEnrollment.aspx.cs">
+      <DependentUpon>EmployeeEnrollment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmployeeTraining\EmployeeEnrollment.aspx.designer.cs">
+      <DependentUpon>EmployeeEnrollment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeTraining\HeldCourses.aspx.cs">
+      <DependentUpon>HeldCourses.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmployeeTraining\HeldCourses.aspx.designer.cs">
+      <DependentUpon>HeldCourses.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeTraining\ManageCourseQuestion.aspx.cs">
+      <DependentUpon>ManageCourseQuestion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmployeeTraining\ManageCourseQuestion.aspx.designer.cs">
+      <DependentUpon>ManageCourseQuestion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeTraining\UserCourseVenueSchedule.aspx.cs">
+      <DependentUpon>UserCourseVenueSchedule.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmployeeTraining\UserCourseVenueSchedule.aspx.designer.cs">
+      <DependentUpon>UserCourseVenueSchedule.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeTraining\ViewCourse.aspx.cs">
+      <DependentUpon>ViewCourse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmployeeTraining\ViewCourse.aspx.designer.cs">
+      <DependentUpon>ViewCourse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeTraining\ViewCoursesReport.aspx.cs">
+      <DependentUpon>ViewCoursesReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmployeeTraining\ViewCoursesReport.aspx.designer.cs">
+      <DependentUpon>ViewCoursesReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="ImageHandler.ashx.cs">
+      <DependentUpon>ImageHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditManagement\AuditSchedule.aspx.cs">
+      <DependentUpon>AuditSchedule.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditManagement\AuditSchedule.aspx.designer.cs">
+      <DependentUpon>AuditSchedule.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditManagement\CreateAction.aspx.cs">
+      <DependentUpon>CreateAction.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditManagement\CreateAction.aspx.designer.cs">
+      <DependentUpon>CreateAction.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditManagement\CreateAudit.aspx.cs">
+      <DependentUpon>CreateAudit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditManagement\CreateAudit.aspx.designer.cs">
+      <DependentUpon>CreateAudit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditManagement\CreateFinding.aspx.cs">
+      <DependentUpon>CreateFinding.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditManagement\CreateFinding.aspx.designer.cs">
+      <DependentUpon>CreateFinding.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditManagement\EditAction.aspx.cs">
+      <DependentUpon>EditAction.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditManagement\EditAction.aspx.designer.cs">
+      <DependentUpon>EditAction.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditManagement\EditFinding.aspx.cs">
+      <DependentUpon>EditFinding.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditManagement\EditFinding.aspx.designer.cs">
+      <DependentUpon>EditFinding.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ManagementReviews\AnnualReviewTasks.aspx.cs">
+      <DependentUpon>AnnualReviewTasks.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManagementReviews\AnnualReviewTasks.aspx.designer.cs">
+      <DependentUpon>AnnualReviewTasks.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ManagementReviews\CreateReview.aspx.cs">
+      <DependentUpon>CreateReview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManagementReviews\CreateReview.aspx.designer.cs">
+      <DependentUpon>CreateReview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ManagementReviews\CreateTask.aspx.cs">
+      <DependentUpon>CreateTask.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManagementReviews\CreateTask.aspx.designer.cs">
+      <DependentUpon>CreateTask.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ManagementReviews\CreateTaskAction.aspx.cs">
+      <DependentUpon>CreateTaskAction.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManagementReviews\CreateTaskAction.aspx.designer.cs">
+      <DependentUpon>CreateTaskAction.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ManagementReviews\ManagementReviewActionList.aspx.cs">
+      <DependentUpon>ManagementReviewActionList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManagementReviews\ManagementReviewActionList.aspx.designer.cs">
+      <DependentUpon>ManagementReviewActionList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ManagementReviews\ManagementReviewList.aspx.cs">
+      <DependentUpon>ManagementReviewList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManagementReviews\ManagementReviewList.aspx.designer.cs">
+      <DependentUpon>ManagementReviewList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ManagementReviews\ManageTask.aspx.cs">
+      <DependentUpon>ManageTask.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManagementReviews\ManageTask.aspx.designer.cs">
+      <DependentUpon>ManageTask.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ManagementReviews\ManageTaskAction.aspx.cs">
+      <DependentUpon>ManageTaskAction.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManagementReviews\ManageTaskAction.aspx.designer.cs">
+      <DependentUpon>ManageTaskAction.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ManagementReviews\ManageTaskActionType.aspx.cs">
+      <DependentUpon>ManageTaskActionType.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManagementReviews\ManageTaskActionType.aspx.designer.cs">
+      <DependentUpon>ManageTaskActionType.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ManagementReviews\ReviewCategory.aspx.cs">
+      <DependentUpon>ReviewCategory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManagementReviews\ReviewCategory.aspx.designer.cs">
+      <DependentUpon>ReviewCategory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ManagementReviews\ReviewSchedule.aspx.cs">
+      <DependentUpon>ReviewSchedule.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManagementReviews\ReviewSchedule.aspx.designer.cs">
+      <DependentUpon>ReviewSchedule.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage\Site1.Master.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage\Site1.Master.designer.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage\Site2.Master.cs">
+      <DependentUpon>Site2.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage\Site2.Master.designer.cs">
+      <DependentUpon>Site2.Master</DependentUpon>
+    </Compile>
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="OrganizationManagement\CreatePosition.aspx.cs">
+      <DependentUpon>CreatePosition.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrganizationManagement\CreatePosition.aspx.designer.cs">
+      <DependentUpon>CreatePosition.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OrganizationManagement\ManagePosition.aspx.cs">
+      <DependentUpon>ManagePosition.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrganizationManagement\ManagePosition.aspx.designer.cs">
+      <DependentUpon>ManagePosition.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OrganizationManagement\OrganizationLevel.aspx.cs">
+      <DependentUpon>OrganizationLevel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrganizationManagement\OrganizationLevel.aspx.designer.cs">
+      <DependentUpon>OrganizationLevel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OrganizationManagement\OrganizationStructure.aspx.cs">
+      <DependentUpon>OrganizationStructure.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrganizationManagement\OrganizationStructure.aspx.designer.cs">
+      <DependentUpon>OrganizationStructure.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProblemManagement\CreateProblem.aspx.cs">
+      <DependentUpon>CreateProblem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProblemManagement\CreateProblem.aspx.designer.cs">
+      <DependentUpon>CreateProblem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProblemManagement\CreateProblemAction.aspx.cs">
+      <DependentUpon>CreateProblemAction.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProblemManagement\CreateProblemAction.aspx.designer.cs">
+      <DependentUpon>CreateProblemAction.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProblemManagement\ManageProblemActions.aspx.cs">
+      <DependentUpon>ManageProblemActions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProblemManagement\ManageProblemActions.aspx.designer.cs">
+      <DependentUpon>ManageProblemActions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProblemManagement\ManageProblems.aspx.cs">
+      <DependentUpon>ManageProblems.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProblemManagement\ManageProblems.aspx.designer.cs">
+      <DependentUpon>ManageProblems.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProblemManagement\ManageProblemType.aspx.cs">
+      <DependentUpon>ManageProblemType.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProblemManagement\ManageProblemType.aspx.designer.cs">
+      <DependentUpon>ManageProblemType.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectManagement\CreateProject.aspx.cs">
+      <DependentUpon>CreateProject.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProjectManagement\CreateProject.aspx.designer.cs">
+      <DependentUpon>CreateProject.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectManagement\ManageProject.aspx.cs">
+      <DependentUpon>ManageProject.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProjectManagement\ManageProject.aspx.designer.cs">
+      <DependentUpon>ManageProject.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RAGHandler.ashx.cs">
+      <DependentUpon>RAGHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Classes\PieXml_Manager.cs" />
+    <Compile Include="Reports\Classes\Xml_Manager.cs" />
+    <Compile Include="RiskManagement\ManageRiskCriteria.aspx.cs">
+      <DependentUpon>ManageRiskCriteria.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RiskManagement\ManageRiskCriteria.aspx.designer.cs">
+      <DependentUpon>ManageRiskCriteria.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RiskManagement\ManageRiskFormulas.aspx.cs">
+      <DependentUpon>ManageRiskFormulas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RiskManagement\ManageRiskFormulas.aspx.designer.cs">
+      <DependentUpon>ManageRiskFormulas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RiskManagement\ManageRiskScoreCriteria.aspx.cs">
+      <DependentUpon>ManageRiskScoreCriteria.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RiskManagement\ManageRiskScoreCriteria.aspx.designer.cs">
+      <DependentUpon>ManageRiskScoreCriteria.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RiskManagement\RiskMaintenance.aspx.cs">
+      <DependentUpon>RiskMaintenance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RiskManagement\RiskMaintenance.aspx.designer.cs">
+      <DependentUpon>RiskMaintenance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RiskManagement\ViewRisks.aspx.cs">
+      <DependentUpon>ViewRisks.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RiskManagement\ViewRisks.aspx.designer.cs">
+      <DependentUpon>ViewRisks.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TerminateSession.aspx.cs">
+      <DependentUpon>TerminateSession.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TerminateSession.aspx.designer.cs">
+      <DependentUpon>TerminateSession.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Upload.ashx.cs">
+      <DependentUpon>Upload.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditManagement\AuditActionList.aspx.cs">
+      <DependentUpon>AuditActionList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditManagement\AuditActionList.aspx.designer.cs">
+      <DependentUpon>AuditActionList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditManagement\Findings.aspx.cs">
+      <DependentUpon>Findings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditManagement\Findings.aspx.designer.cs">
+      <DependentUpon>Findings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditManagement\ISOClauses.aspx.cs">
+      <DependentUpon>ISOClauses.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditManagement\ISOClauses.aspx.designer.cs">
+      <DependentUpon>ISOClauses.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditManagement\RAGAnalysisActions.aspx.cs">
+      <DependentUpon>RAGAnalysisActions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditManagement\RAGAnalysisActions.aspx.designer.cs">
+      <DependentUpon>RAGAnalysisActions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditManagement\RAGAnalysisAudits.aspx.cs">
+      <DependentUpon>RAGAnalysisAudits.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditManagement\RAGAnalysisAudits.aspx.designer.cs">
+      <DependentUpon>RAGAnalysisAudits.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditManagement\RootCause.aspx.cs">
+      <DependentUpon>RootCause.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditManagement\RootCause.aspx.designer.cs">
+      <DependentUpon>RootCause.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProblemManagement\AnnualProblems.aspx.cs">
+      <DependentUpon>AnnualProblems.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProblemManagement\AnnualProblems.aspx.designer.cs">
+      <DependentUpon>AnnualProblems.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProblemManagement\ProblemBySeverity.aspx.cs">
+      <DependentUpon>ProblemBySeverity.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProblemManagement\ProblemBySeverity.aspx.designer.cs">
+      <DependentUpon>ProblemBySeverity.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProblemManagement\ProblemsByRootCause.aspx.cs">
+      <DependentUpon>ProblemsByRootCause.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProblemManagement\ProblemsByRootCause.aspx.designer.cs">
+      <DependentUpon>ProblemsByRootCause.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProblemManagement\ProblemsByStatus.aspx.cs">
+      <DependentUpon>ProblemsByStatus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProblemManagement\ProblemsByStatus.aspx.designer.cs">
+      <DependentUpon>ProblemsByStatus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProblemManagement\RAGAnalysisofActions.aspx.cs">
+      <DependentUpon>RAGAnalysisofActions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProblemManagement\RAGAnalysisofActions.aspx.designer.cs">
+      <DependentUpon>RAGAnalysisofActions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProblemManagement\ViewActions.aspx.cs">
+      <DependentUpon>ViewActions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProblemManagement\ViewActions.aspx.designer.cs">
+      <DependentUpon>ViewActions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProblemManagement\ViewActionStatistics.aspx.cs">
+      <DependentUpon>ViewActionStatistics.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProblemManagement\ViewActionStatistics.aspx.designer.cs">
+      <DependentUpon>ViewActionStatistics.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VisioLinks\Business_Development.aspx.cs">
+      <DependentUpon>Business_Development.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VisioLinks\Business_Development.aspx.designer.cs">
+      <DependentUpon>Business_Development.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VisioLinks\Customer_Billing.aspx.cs">
+      <DependentUpon>Customer_Billing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VisioLinks\Customer_Billing.aspx.designer.cs">
+      <DependentUpon>Customer_Billing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VisioLinks\Customer_Order_Handling.aspx.cs">
+      <DependentUpon>Customer_Order_Handling.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VisioLinks\Customer_Order_Handling.aspx.designer.cs">
+      <DependentUpon>Customer_Order_Handling.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VisioLinks\Enviroments_Welfare.aspx.cs">
+      <DependentUpon>Enviroments_Welfare.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VisioLinks\Enviroments_Welfare.aspx.designer.cs">
+      <DependentUpon>Enviroments_Welfare.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VisioLinks\Order_Fulfilment.aspx.cs">
+      <DependentUpon>Order_Fulfilment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VisioLinks\Order_Fulfilment.aspx.designer.cs">
+      <DependentUpon>Order_Fulfilment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VisioLinks\Purchasing_Verification.aspx.cs">
+      <DependentUpon>Purchasing_Verification.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VisioLinks\Purchasing_Verification.aspx.designer.cs">
+      <DependentUpon>Purchasing_Verification.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VisioLinks\Security_Management.aspx.cs">
+      <DependentUpon>Security_Management.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VisioLinks\Security_Management.aspx.designer.cs">
+      <DependentUpon>Security_Management.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VisioLinks\Strategy_and_Mission_Statement.aspx.cs">
+      <DependentUpon>Strategy_and_Mission_Statement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VisioLinks\Strategy_and_Mission_Statement.aspx.designer.cs">
+      <DependentUpon>Strategy_and_Mission_Statement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VisioLinks\WI_Admin_Tools.aspx.cs">
+      <DependentUpon>WI_Admin_Tools.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VisioLinks\WI_Admin_Tools.aspx.designer.cs">
+      <DependentUpon>WI_Admin_Tools.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VisioLinks\WI_Asset_Management.aspx.cs">
+      <DependentUpon>WI_Asset_Management.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VisioLinks\WI_Asset_Management.aspx.designer.cs">
+      <DependentUpon>WI_Asset_Management.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VisioLinks\WI_CCN.aspx.cs">
+      <DependentUpon>WI_CCN.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VisioLinks\WI_CCN.aspx.designer.cs">
+      <DependentUpon>WI_CCN.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VisioLinks\WI_Document_List.aspx.cs">
+      <DependentUpon>WI_Document_List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VisioLinks\WI_Document_List.aspx.designer.cs">
+      <DependentUpon>WI_Document_List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VisioLinks\WI_Employee_Training.aspx.cs">
+      <DependentUpon>WI_Employee_Training.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VisioLinks\WI_Employee_Training.aspx.designer.cs">
+      <DependentUpon>WI_Employee_Training.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VisioLinks\WI_Incident.aspx.cs">
+      <DependentUpon>WI_Incident.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VisioLinks\WI_Incident.aspx.designer.cs">
+      <DependentUpon>WI_Incident.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VisioLinks\WI_Internal_Audits.aspx.cs">
+      <DependentUpon>WI_Internal_Audits.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VisioLinks\WI_Internal_Audits.aspx.designer.cs">
+      <DependentUpon>WI_Internal_Audits.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VisioLinks\WI_Management_Review.aspx.cs">
+      <DependentUpon>WI_Management_Review.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VisioLinks\WI_Management_Review.aspx.designer.cs">
+      <DependentUpon>WI_Management_Review.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VisioLinks\WI_Risk_Management.aspx.cs">
+      <DependentUpon>WI_Risk_Management.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VisioLinks\WI_Risk_Management.aspx.designer.cs">
+      <DependentUpon>WI_Risk_Management.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Visio\Process.aspx.cs">
+      <DependentUpon>Process.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Visio\Process.aspx.designer.cs">
+      <DependentUpon>Process.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MasterPage\Site1.Master" />
+    <Content Include="ControlRenderer.ashx" />
+    <Content Include="Upload.ashx" />
+    <Content Include="ImageHandler.ashx" />
+    <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <Content Include="obj\Debug\QMSRSTools.csprojResolveAssemblyReference.cache" />
+    <Content Include="RAGHandler.ashx" />
+    <Content Include="VisioDiagrams\Business_Model.vsd" />
+    <Content Include="VisioDiagrams\Continous_Imporvment.vsd" />
+    <Content Include="VisioDiagrams\Customer_Order_Handling.vsd" />
+    <Content Include="VisioDiagrams\Customer_Support.vsd" />
+    <Content Include="VisioDiagrams\Order_Processing.vsd" />
+    <Content Include="VisioDiagrams\People_Welfare.vsd" />
+    <Content Include="VisioDiagrams\Purchase_Order_Processing.vsd" />
+    <Content Include="VisioDiagrams\Who_is_Who.vsd" />
+    <Content Include="MasterPage\Site2.Master" />
+    <Content Include="DocumentDownload.ashx" />
+    <Content Include="FormulaHandler.ashx" />
+    <Content Include="MasterPage\Site3.Master" />
+    <Content Include="bin\LINQConnection.dll.config" />
+    <None Include="Properties\PublishProfiles\Branch5_Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\jtest.pubxml" />
+    <None Include="Properties\PublishProfiles\QMSRSToolEN_Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\qmsrstools.pubxml" />
+    <None Include="Properties\PublishProfiles\qmsrs_local.pubxml" />
+    <Content Include="VisioDiagrams\QMSrs-002-E-AsM-P.vsd" />
+    <Content Include="VisioDiagrams\QMSrs-003-E-AM-P.vsd" />
+    <Content Include="VisioDiagrams\QMSrs-005-E-DCR-P.vsd" />
+    <Content Include="VisioDiagrams\QMSrs-007-E-ET-P.vsd" />
+    <Content Include="VisioDiagrams\QMSrs-010-E-DM-P.vsd" />
+    <Content Include="VisioDiagrams\QMSrs-010-E-MR-P.vsd" />
+    <Content Include="VisioDiagrams\QMSrs-011-E-PrM-P.vsd" />
+    <Content Include="VisioDiagrams\QMSrs-014-E-QR-P.vsd" />
+    <Content Include="VisioDiagrams\QMSrs-015-E-RM-P.vsd" />
+    <EmbeddedResource Include="Reports\SSRS\AssetListByCategory.rdlc" />
+    <EmbeddedResource Include="Reports\SSRS\AuditRecord.rdlc" />
+    <Content Include="QMSRSToolsENRDLCDataSet.xsc">
+      <DependentUpon>QMSRSToolsENRDLCDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="Properties\PublishProfiles\Tools_EN.pubxml" />
+    <None Include="QMSRSToolsENRDLCDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QMSRSToolsENRDLCDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="QMSRSToolsENRDLCDataSet.xss">
+      <DependentUpon>QMSRSToolsENRDLCDataSet.xsd</DependentUpon>
+    </Content>
+    <Content Include="Reports\SSRS\AttendanceList.rdlc" />
+    <EmbeddedResource Include="Reports\SSRS\AuditAction.rdlc" />
+    <Content Include="Reports\SSRS\AuditList.rdlc" />
+    <Content Include="Reports\SSRS\CourseList.rdlc" />
+    <Content Include="Reports\SSRS\DCRList.rdlc" />
+    <Content Include="Reports\SSRS\DocumentList.rdlc" />
+    <Content Include="Reports\SSRS\ProblemActionList.rdlc" />
+    <Content Include="Reports\SSRS\ProblemList.rdlc" />
+    <Content Include="Reports\SSRS\ReviewActionList.rdlc" />
+    <Content Include="Reports\SSRS\ReviewList.rdlc" />
+    <Content Include="Reports\SSRS\RiskList.rdlc" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="obj\Debug\TempPE\" />
+    <Folder Include="Reports\Data\" />
+    <Folder Include="uploads\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataClasses\DataClasses.csproj">
+      <Project>{a7902250-7c63-4719-be8d-d599276b8c92}</Project>
+      <Name>DataClasses</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LINQConnection\LINQConnection.csproj">
+      <Project>{e5042b12-1856-4156-8e5b-77cf508ec177}</Project>
+      <Name>LINQConnection</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utilities\QMSRS.Utilities.csproj">
+      <Project>{e8af817c-5696-4c2c-845a-8a279f5e64b9}</Project>
+      <Name>QMSRS.Utilities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Reports\SSRS\AssetList.rdlc" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>52608</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:49364/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

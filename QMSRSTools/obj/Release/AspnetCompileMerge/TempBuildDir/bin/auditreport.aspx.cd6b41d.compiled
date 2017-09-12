@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/AuditManagement/AuditReport.aspx" hash="30f0ab540" filehash="11acbbd05aff" flags="110000" assembly="App_Web_mtcljopx" type="ASP.auditmanagement_auditreport_aspx">
+    <filedeps>
+        <filedep name="/AuditManagement/AuditReport.aspx" />
+    </filedeps>
+</preserve>

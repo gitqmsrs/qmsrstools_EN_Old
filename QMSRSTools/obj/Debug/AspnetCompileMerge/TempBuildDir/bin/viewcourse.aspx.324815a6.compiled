@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/EmployeeTraining/ViewCourse.aspx" hash="fffffff7fc7587dc" filehash="e2fe2fe8dff65ab3" flags="110000" assembly="App_Web_vw5bcdek" type="ASP.employeetraining_viewcourse_aspx">
+    <filedeps>
+        <filedep name="/EmployeeTraining/ViewCourse.aspx" />
+        <filedep name="/MasterPage/Site2.Master" />
+    </filedeps>
+</preserve>

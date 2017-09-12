@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A7902250-7C63-4719-BE8D-D599276B8C92}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DataClasses</RootNamespace>
+    <AssemblyName>DataClasses</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Administration\CalendarData.cs" />
+    <Compile Include="Administration\Category.cs" />
+    <Compile Include="Administration\CostCentre.cs" />
+    <Compile Include="Administration\EmailConfiguration.cs" />
+    <Compile Include="Administration\EmailParameter.cs" />
+    <Compile Include="Administration\EmailRecipient.cs" />
+    <Compile Include="Administration\EmailSender.cs" />
+    <Compile Include="Administration\EmailTemplate.cs" />
+    <Compile Include="Administration\FormulaProcessor.cs" />
+    <Compile Include="Administration\GenericType.cs" />
+    <Compile Include="Administration\ISOProcess.cs" />
+    <Compile Include="Administration\ISOStandard.cs" />
+    <Compile Include="Administration\Operation.cs" />
+    <Compile Include="Administration\PasswordHash.cs" />
+    <Compile Include="Administration\Permission.cs" />
+    <Compile Include="Enumeration.cs" />
+    <Compile Include="Administration\RAGCondition.cs" />
+    <Compile Include="Administration\RAGLinkAction.cs" />
+    <Compile Include="Administration\RAGParameter.cs" />
+    <Compile Include="Administration\RAGProcessor.cs" />
+    <Compile Include="Administration\SessionContext.cs" />
+    <Compile Include="Administration\Severity.cs" />
+    <Compile Include="Administration\SMTPServer.cs" />
+    <Compile Include="Administration\Status.cs" />
+    <Compile Include="Administration\ToolMenuTree.cs" />
+    <Compile Include="Administration\Users.cs" />
+    <Compile Include="Administration\VisioManagement.cs" />
+    <Compile Include="AssetManagement\Asset.cs" />
+    <Compile Include="AssetManagement\AssetExtensions.cs" />
+    <Compile Include="AssetManagement\Depreciation.cs" />
+    <Compile Include="AssetManagement\Method.cs" />
+    <Compile Include="AuditManagement\ActionFindingType.cs" />
+    <Compile Include="AuditManagement\AuditActions.cs" />
+    <Compile Include="AuditManagement\AuditEmailRecipient.cs" />
+    <Compile Include="AuditManagement\AuditFinding.cs" />
+    <Compile Include="AuditManagement\AuditRecord.cs" />
+    <Compile Include="ChangeControl\CCN.cs" />
+    <Compile Include="Administration\ApprovalMember.cs" />
+    <Compile Include="Customer\Customer.cs" />
+    <Compile Include="Customer\CustomerAddress.cs" />
+    <Compile Include="Customer\CustomerContact.cs" />
+    <Compile Include="DateParam.cs" />
+    <Compile Include="DocumentList\DocFile.cs" />
+    <Compile Include="DocumentList\DocFileType.cs" />
+    <Compile Include="EmployeeManagement\Address.cs" />
+    <Compile Include="EmployeeManagement\Contact.cs" />
+    <Compile Include="EmployeeManagement\Contract.cs" />
+    <Compile Include="EmployeeManagement\ContractAssignement.cs" />
+    <Compile Include="EmployeeManagement\ContractGroup.cs" />
+    <Compile Include="EmployeeManagement\Dependant.cs" />
+    <Compile Include="EmployeeManagement\Education.cs" />
+    <Compile Include="EmployeeManagement\Employee.cs" />
+    <Compile Include="EmployeeManagement\Extensions.cs" />
+    <Compile Include="EmployeeManagement\Nationality.cs" />
+    <Compile Include="EmployeeManagement\ResidenceDocument.cs" />
+    <Compile Include="EmployeeTraining\Course.cs" />
+    <Compile Include="EmployeeTraining\CourseSchedule.cs" />
+    <Compile Include="EmployeeTraining\CourseVenue.cs" />
+    <Compile Include="EmployeeTraining\Enroller.cs" />
+    <Compile Include="EmployeeTraining\Feedback.cs" />
+    <Compile Include="EmployeeTraining\Question.cs" />
+    <Compile Include="ManagementReviews\ManagementReviewAction.cs" />
+    <Compile Include="ManagementReviews\Review.cs" />
+    <Compile Include="ManagementReviews\ReviewTask.cs" />
+    <Compile Include="ManagementReviews\TaskActionType.cs" />
+    <Compile Include="Organization\ORGLevel.cs" />
+    <Compile Include="Organization\ORGUnit.cs" />
+    <Compile Include="Organization\Position.cs" />
+    <Compile Include="ProblemManagement\Action.cs" />
+    <Compile Include="ProblemManagement\Causes.cs" />
+    <Compile Include="ProblemManagement\Problem.cs" />
+    <Compile Include="ProjectManagement\Project.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QualityRecords\QualityRecord.cs" />
+    <Compile Include="RiskManagement\Impact.cs" />
+    <Compile Include="RiskManagement\ISO14001Guide.cs" />
+    <Compile Include="RiskManagement\MatrixCell.cs" />
+    <Compile Include="RiskManagement\MitigationAction.cs" />
+    <Compile Include="RiskManagement\MitigationType.cs" />
+    <Compile Include="RiskManagement\RateCriteria.cs" />
+    <Compile Include="RiskManagement\Risk.cs" />
+    <Compile Include="RiskManagement\RiskCriteria.cs" />
+    <Compile Include="RiskManagement\RiskFormula.cs" />
+    <Compile Include="RiskManagement\RiskFormulaProcessor.cs" />
+    <Compile Include="RiskManagement\RiskParameter.cs" />
+    <Compile Include="RiskManagement\RiskProbability.cs" />
+    <Compile Include="RiskManagement\RiskSubcategory.cs" />
+    <Compile Include="RiskManagement\ScoreCriteria.cs" />
+    <Compile Include="RiskManagement\StandardCost.cs" />
+    <Compile Include="Skill.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LINQConnection\LINQConnection.csproj">
+      <Project>{e5042b12-1856-4156-8e5b-77cf508ec177}</Project>
+      <Name>LINQConnection</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

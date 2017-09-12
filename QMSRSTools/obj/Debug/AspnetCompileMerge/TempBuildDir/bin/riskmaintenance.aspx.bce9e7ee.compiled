@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/RiskManagement/RiskMaintenance.aspx" hash="fffffff7fc7587dc" filehash="f36824bcb73b6b49" flags="110000" assembly="App_Web_ka1eq0aj" type="ASP.riskmanagement_riskmaintenance_aspx">
+    <filedeps>
+        <filedep name="/MasterPage/Site2.Master" />
+        <filedep name="/RiskManagement/RiskMaintenance.aspx" />
+    </filedeps>
+</preserve>

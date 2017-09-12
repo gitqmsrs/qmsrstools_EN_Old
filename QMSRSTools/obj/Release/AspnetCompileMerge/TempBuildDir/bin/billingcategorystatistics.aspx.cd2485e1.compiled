@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/AssetManagement/BillingCategoryStatistics.aspx" hash="30f0ab540" filehash="56dfa0642e83a453" flags="110000" assembly="App_Web_tg0vuldv" type="ASP.assetmanagement_billingcategorystatistics_aspx">
+    <filedeps>
+        <filedep name="/AssetManagement/BillingCategoryStatistics.aspx" />
+        <filedep name="/MasterPage/Site2.Master" />
+    </filedeps>
+</preserve>

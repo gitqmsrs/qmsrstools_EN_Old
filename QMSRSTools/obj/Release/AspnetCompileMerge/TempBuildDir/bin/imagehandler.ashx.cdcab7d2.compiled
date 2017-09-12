@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="2" virtualPath="/ImageHandler.ashx" hash="1ac71260" filehash="ffffcbec8b189b9a" flags="130000" assembly="QMSRSTools" type="QMSRSTools.ImageHandler">
+    <filedeps>
+        <filedep name="/ImageHandler.ashx" />
+    </filedeps>
+</preserve>

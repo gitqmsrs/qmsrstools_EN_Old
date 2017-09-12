@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/ProblemManagement/AnnualProblems.aspx" hash="30f0ab540" filehash="fa3a244e28125a33" flags="110000" assembly="App_Web_ekyldfn-" type="ASP.problemmanagement_annualproblems_aspx">
+    <filedeps>
+        <filedep name="/MasterPage/Site2.Master" />
+        <filedep name="/ProblemManagement/AnnualProblems.aspx" />
+    </filedeps>
+</preserve>

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/MasterPage/Site2.Master" hash="30f0ab540" filehash="ffffffae52b1305f" flags="110000" assembly="App_Web_sarudule" type="ASP.masterpage_site2_master">
+    <filedeps>
+        <filedep name="/MasterPage/Site2.Master" />
+    </filedeps>
+</preserve>

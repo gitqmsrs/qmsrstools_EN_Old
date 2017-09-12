@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/Administration/ManageBillingCategory.aspx" hash="30f0ab540" filehash="d0b2e4ffff7da7a3" flags="110000" assembly="App_Web_dvrl6evg" type="ASP.administration_managebillingcategory_aspx">
+    <filedeps>
+        <filedep name="/Administration/ManageBillingCategory.aspx" />
+        <filedep name="/MasterPage/Site2.Master" />
+    </filedeps>
+</preserve>

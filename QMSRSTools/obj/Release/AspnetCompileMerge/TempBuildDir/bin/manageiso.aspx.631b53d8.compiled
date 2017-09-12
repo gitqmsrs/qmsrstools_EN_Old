@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/Administration/ManageISO.aspx" hash="30f0ab540" filehash="96e6d96c464e6730" flags="110000" assembly="App_Web_dvrl6evg" type="ASP.administration_manageiso_aspx">
+    <filedeps>
+        <filedep name="/Administration/ManageISO.aspx" />
+        <filedep name="/MasterPage/Site2.Master" />
+    </filedeps>
+</preserve>

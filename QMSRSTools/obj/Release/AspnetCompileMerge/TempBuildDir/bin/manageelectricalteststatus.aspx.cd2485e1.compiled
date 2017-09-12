@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/AssetManagement/ManageElectricalTestStatus.aspx" hash="30f0ab540" filehash="1168ae01b1448e38" flags="110000" assembly="App_Web_tg0vuldv" type="ASP.assetmanagement_manageelectricalteststatus_aspx">
+    <filedeps>
+        <filedep name="/AssetManagement/ManageElectricalTestStatus.aspx" />
+        <filedep name="/MasterPage/Site2.Master" />
+    </filedeps>
+</preserve>

@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/OrganizationManagement/OrganizationLevel.aspx" hash="fffffff7fc7587dc" filehash="c97d92833056e05" flags="110000" assembly="App_Web_lmpe4g0u" type="ASP.organizationmanagement_organizationlevel_aspx">
+    <filedeps>
+        <filedep name="/MasterPage/Site2.Master" />
+        <filedep name="/OrganizationManagement/OrganizationLevel.aspx" />
+    </filedeps>
+</preserve>

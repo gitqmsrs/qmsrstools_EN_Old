@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/ChangeControl/ViewCCN.aspx" hash="fffffff7fc7587dc" filehash="f52f6379d339a4e2" flags="110000" assembly="App_Web_aoekqx5l" type="ASP.changecontrol_viewccn_aspx">
+    <filedeps>
+        <filedep name="/ChangeControl/ViewCCN.aspx" />
+        <filedep name="/MasterPage/Site2.Master" />
+    </filedeps>
+</preserve>

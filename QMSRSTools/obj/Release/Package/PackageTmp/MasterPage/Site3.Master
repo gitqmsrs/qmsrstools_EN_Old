@@ -1,0 +1,42 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site3.master.cs" Inherits="QMSRSTools.MasterPage.Site3" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <link href="~/CSS/EN-Controls.css" type="text/css" rel="stylesheet" />
+    <link href="~/CSS/login.css" type="text/css" rel="stylesheet" />
+
+    <script type="text/javascript" src="http://www.qmsrs.com/qmsrstools/JS/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="http://www.qmsrs.com/qmsrstools/JS/general.js"></script>
+
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body onload="checkLicenseValidation();">
+    <form id="form1" runat="server">
+    <ajax:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server"></ajax:ToolkitScriptManager>
+    
+        <div class="headertop">
+        <table id="Table_01" height="78" border="0" cellpadding="0" cellspacing="0" style="margin-top:2px; width: 320px;">
+	        <tr>
+		    <td>
+			    <img src="http://www.qmsrs.com/qmsrstools/images/Login_Logo_01.gif"  alt="" />
+		    </td>			    
+            <td>
+			    <img src="http://www.qmsrs.com/qmsrstools/images/Space.png" width="105" alt="" /></td>			   		   
+		    <td>
+			    <img src="http://www.qmsrs.com/qmsrstools/images/Login_Logo_02.gif"  alt="" /></td>
+	        </tr>
+        </table>
+    </div>   
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+    </asp:ContentPlaceHolder>
+      <div class="footer">© QMSrs, 2008-2014, registered in England, United Kingdom, No. 03836478.</div>
+    </form>
+</body>
+</html>
